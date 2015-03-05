@@ -1,0 +1,439 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		61CF0FA11AA8C1300040FCE9 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 61CF0FA01AA8C1300040FCE9 /* AppDelegate.swift */; };
+		61CF0FA41AA8C1300040FCE9 /* Tumbling_DK.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 61CF0FA21AA8C1300040FCE9 /* Tumbling_DK.xcdatamodeld */; };
+		61CF0FA61AA8C1300040FCE9 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 61CF0FA51AA8C1300040FCE9 /* ViewController.swift */; };
+		61CF0FA91AA8C1300040FCE9 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 61CF0FA71AA8C1300040FCE9 /* Main.storyboard */; };
+		61CF0FAB1AA8C1300040FCE9 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 61CF0FAA1AA8C1300040FCE9 /* Images.xcassets */; };
+		61CF0FAE1AA8C1300040FCE9 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 61CF0FAC1AA8C1300040FCE9 /* LaunchScreen.xib */; };
+		61CF0FBA1AA8C1310040FCE9 /* Tumbling_DKTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 61CF0FB91AA8C1310040FCE9 /* Tumbling_DKTests.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		61CF0FB41AA8C1310040FCE9 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 61CF0F931AA8C1300040FCE9 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 61CF0F9A1AA8C1300040FCE9;
+			remoteInfo = "Tumbling DK";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		61CF0F9B1AA8C1300040FCE9 /* Tumbling DK.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Tumbling DK.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		61CF0F9F1AA8C1300040FCE9 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		61CF0FA01AA8C1300040FCE9 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		61CF0FA31AA8C1300040FCE9 /* Tumbling_DK.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Tumbling_DK.xcdatamodel; sourceTree = "<group>"; };
+		61CF0FA51AA8C1300040FCE9 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		61CF0FA81AA8C1300040FCE9 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		61CF0FAA1AA8C1300040FCE9 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		61CF0FAD1AA8C1300040FCE9 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/LaunchScreen.xib; sourceTree = "<group>"; };
+		61CF0FB31AA8C1310040FCE9 /* Tumbling DKTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Tumbling DKTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		61CF0FB81AA8C1310040FCE9 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		61CF0FB91AA8C1310040FCE9 /* Tumbling_DKTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Tumbling_DKTests.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		61CF0F981AA8C1300040FCE9 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		61CF0FB01AA8C1310040FCE9 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		61CF0F921AA8C1300040FCE9 = {
+			isa = PBXGroup;
+			children = (
+				61CF0F9D1AA8C1300040FCE9 /* Tumbling DK */,
+				61CF0FB61AA8C1310040FCE9 /* Tumbling DKTests */,
+				61CF0F9C1AA8C1300040FCE9 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		61CF0F9C1AA8C1300040FCE9 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				61CF0F9B1AA8C1300040FCE9 /* Tumbling DK.app */,
+				61CF0FB31AA8C1310040FCE9 /* Tumbling DKTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		61CF0F9D1AA8C1300040FCE9 /* Tumbling DK */ = {
+			isa = PBXGroup;
+			children = (
+				61CF0FA01AA8C1300040FCE9 /* AppDelegate.swift */,
+				61CF0FA51AA8C1300040FCE9 /* ViewController.swift */,
+				61CF0FA71AA8C1300040FCE9 /* Main.storyboard */,
+				61CF0FAA1AA8C1300040FCE9 /* Images.xcassets */,
+				61CF0FAC1AA8C1300040FCE9 /* LaunchScreen.xib */,
+				61CF0FA21AA8C1300040FCE9 /* Tumbling_DK.xcdatamodeld */,
+				61CF0F9E1AA8C1300040FCE9 /* Supporting Files */,
+			);
+			path = "Tumbling DK";
+			sourceTree = "<group>";
+		};
+		61CF0F9E1AA8C1300040FCE9 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				61CF0F9F1AA8C1300040FCE9 /* Info.plist */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		61CF0FB61AA8C1310040FCE9 /* Tumbling DKTests */ = {
+			isa = PBXGroup;
+			children = (
+				61CF0FB91AA8C1310040FCE9 /* Tumbling_DKTests.swift */,
+				61CF0FB71AA8C1310040FCE9 /* Supporting Files */,
+			);
+			path = "Tumbling DKTests";
+			sourceTree = "<group>";
+		};
+		61CF0FB71AA8C1310040FCE9 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				61CF0FB81AA8C1310040FCE9 /* Info.plist */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		61CF0F9A1AA8C1300040FCE9 /* Tumbling DK */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 61CF0FBD1AA8C1310040FCE9 /* Build configuration list for PBXNativeTarget "Tumbling DK" */;
+			buildPhases = (
+				61CF0F971AA8C1300040FCE9 /* Sources */,
+				61CF0F981AA8C1300040FCE9 /* Frameworks */,
+				61CF0F991AA8C1300040FCE9 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "Tumbling DK";
+			productName = "Tumbling DK";
+			productReference = 61CF0F9B1AA8C1300040FCE9 /* Tumbling DK.app */;
+			productType = "com.apple.product-type.application";
+		};
+		61CF0FB21AA8C1310040FCE9 /* Tumbling DKTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 61CF0FC01AA8C1310040FCE9 /* Build configuration list for PBXNativeTarget "Tumbling DKTests" */;
+			buildPhases = (
+				61CF0FAF1AA8C1310040FCE9 /* Sources */,
+				61CF0FB01AA8C1310040FCE9 /* Frameworks */,
+				61CF0FB11AA8C1310040FCE9 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				61CF0FB51AA8C1310040FCE9 /* PBXTargetDependency */,
+			);
+			name = "Tumbling DKTests";
+			productName = "Tumbling DKTests";
+			productReference = 61CF0FB31AA8C1310040FCE9 /* Tumbling DKTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		61CF0F931AA8C1300040FCE9 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0610;
+				ORGANIZATIONNAME = "Janus Broch Mols";
+				TargetAttributes = {
+					61CF0F9A1AA8C1300040FCE9 = {
+						CreatedOnToolsVersion = 6.1.1;
+					};
+					61CF0FB21AA8C1310040FCE9 = {
+						CreatedOnToolsVersion = 6.1.1;
+						TestTargetID = 61CF0F9A1AA8C1300040FCE9;
+					};
+				};
+			};
+			buildConfigurationList = 61CF0F961AA8C1300040FCE9 /* Build configuration list for PBXProject "Tumbling DK" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 61CF0F921AA8C1300040FCE9;
+			productRefGroup = 61CF0F9C1AA8C1300040FCE9 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				61CF0F9A1AA8C1300040FCE9 /* Tumbling DK */,
+				61CF0FB21AA8C1310040FCE9 /* Tumbling DKTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		61CF0F991AA8C1300040FCE9 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				61CF0FA91AA8C1300040FCE9 /* Main.storyboard in Resources */,
+				61CF0FAE1AA8C1300040FCE9 /* LaunchScreen.xib in Resources */,
+				61CF0FAB1AA8C1300040FCE9 /* Images.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		61CF0FB11AA8C1310040FCE9 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		61CF0F971AA8C1300040FCE9 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				61CF0FA61AA8C1300040FCE9 /* ViewController.swift in Sources */,
+				61CF0FA41AA8C1300040FCE9 /* Tumbling_DK.xcdatamodeld in Sources */,
+				61CF0FA11AA8C1300040FCE9 /* AppDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		61CF0FAF1AA8C1310040FCE9 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				61CF0FBA1AA8C1310040FCE9 /* Tumbling_DKTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		61CF0FB51AA8C1310040FCE9 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 61CF0F9A1AA8C1300040FCE9 /* Tumbling DK */;
+			targetProxy = 61CF0FB41AA8C1310040FCE9 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		61CF0FA71AA8C1300040FCE9 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				61CF0FA81AA8C1300040FCE9 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		61CF0FAC1AA8C1300040FCE9 /* LaunchScreen.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				61CF0FAD1AA8C1300040FCE9 /* Base */,
+			);
+			name = LaunchScreen.xib;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		61CF0FBB1AA8C1310040FCE9 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.1;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		61CF0FBC1AA8C1310040FCE9 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = YES;
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.1;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		61CF0FBE1AA8C1310040FCE9 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = "Tumbling DK/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		61CF0FBF1AA8C1310040FCE9 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = "Tumbling DK/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+		61CF0FC11AA8C1310040FCE9 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+				);
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = "Tumbling DKTests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Tumbling DK.app/Tumbling DK";
+			};
+			name = Debug;
+		};
+		61CF0FC21AA8C1310040FCE9 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = "Tumbling DKTests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Tumbling DK.app/Tumbling DK";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		61CF0F961AA8C1300040FCE9 /* Build configuration list for PBXProject "Tumbling DK" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				61CF0FBB1AA8C1310040FCE9 /* Debug */,
+				61CF0FBC1AA8C1310040FCE9 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		61CF0FBD1AA8C1310040FCE9 /* Build configuration list for PBXNativeTarget "Tumbling DK" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				61CF0FBE1AA8C1310040FCE9 /* Debug */,
+				61CF0FBF1AA8C1310040FCE9 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		61CF0FC01AA8C1310040FCE9 /* Build configuration list for PBXNativeTarget "Tumbling DKTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				61CF0FC11AA8C1310040FCE9 /* Debug */,
+				61CF0FC21AA8C1310040FCE9 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		61CF0FA21AA8C1300040FCE9 /* Tumbling_DK.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				61CF0FA31AA8C1300040FCE9 /* Tumbling_DK.xcdatamodel */,
+			);
+			currentVersion = 61CF0FA31AA8C1300040FCE9 /* Tumbling_DK.xcdatamodel */;
+			path = Tumbling_DK.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
+	};
+	rootObject = 61CF0F931AA8C1300040FCE9 /* Project object */;
+}
