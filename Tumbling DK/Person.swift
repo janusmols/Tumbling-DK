@@ -10,11 +10,11 @@ import Foundation
 
 
 class categories {
-    var name = "name"
+    var title = "title"
     
-    init(name: String){
+    init(title: String){
         
-        self.name = name
+        self.title = title
 
     }
 

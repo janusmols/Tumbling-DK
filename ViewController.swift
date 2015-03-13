@@ -28,11 +28,11 @@ class ViewController: UIViewController, UITableViewDataSource, UITableViewDelega
     
     func setUpCategories(){
     //set up the the titles for the tableview
-        var category1 = categories(name: "Nyheder")
-        var category2 = categories(name: "Top Tumblere")
-        var category3 = categories(name: "Sværdhedsrekorder")
-        var category4 = categories(name: "Video")
-        var category5 = categories(name: "Kalender")
+        var category1 = categories(title: "Nyheder")
+        var category2 = categories(title: "Top Tumblere")
+        var category3 = categories(title: "Sværdhedsrekorder")
+        var category4 = categories(title: "Video")
+        var category5 = categories(title: "Kalender")
 
         //connect the titles to the categoryarray
         arrayOfCategories.append(category1)
@@ -52,12 +52,11 @@ class ViewController: UIViewController, UITableViewDataSource, UITableViewDelega
     func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath) -> UITableViewCell {
         //initialize the cell
         let cell: CustomCell = tableView.dequeueReusableCellWithIdentifier("Cell") as CustomCell
+        //Set the backgroundcolor of the cells
+        cell.backgroundColor = UIColor.groupTableViewBackgroundColor()
 
-            cell.backgroundColor = UIColor.purpleColor()
-
-        
         let categories = arrayOfCategories[indexPath.row]
-        cell.setCell(categories.name)
+        cell.setCell(categories.title)
         
         return cell
     }
@@ -69,7 +68,7 @@ class ViewController: UIViewController, UITableViewDataSource, UITableViewDelega
         
         var detailedViewController: DetailViewController = self.storyboard?.instantiateViewControllerWithIdentifier("DetailViewController") as DetailViewController
         
-        detailedViewController.nameString = categories.name
+        detailedViewController.nameString = categories.title
 
         
         self.presentViewController(detailedViewController, animated: true, completion: nil)
