@@ -11,8 +11,7 @@ import UIKit
 class CustomCell: UITableViewCell {
 
     @IBOutlet weak var leftLabel: UILabel!
-    @IBOutlet weak var rightLabel: UILabel! 
-    @IBOutlet weak var myImageView: UIImageView!
+    
     
     override func awakeFromNib() {
         super.awakeFromNib()
@@ -25,11 +24,10 @@ class CustomCell: UITableViewCell {
         // Configure the view for the selected state
     }
        
-    func setCell(leftLabelText: String, rightLabelInt: Int, imageName: String){
+    func setCell(leftLabelText: String){
         
         self.leftLabel.text = leftLabelText
-        self.rightLabel.text = String(rightLabelInt)
-        self.myImageView.image = UIImage(named: imageName)
+        
     }
 
 }

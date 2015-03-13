@@ -11,14 +11,11 @@ import Foundation
 
 class Person {
     var name = "name"
-    var number = 0
-    var imageName = "blank"
     
-    init(name: String, number: Int, imageName: String){
+    init(name: String){
         
         self.name = name
-        self.number = number
-        self.imageName = imageName
+
     }
 
    }

@@ -26,15 +26,17 @@ class ViewController: UIViewController, UITableViewDataSource, UITableViewDelega
     
     func setUpPersons(){
     
-        var person1 = Person(name: "Anna", number: 60, imageName: "img1.png")
-        var person2 = Person(name: "Joe", number: 10, imageName: "img2.png")
-        var person3 = Person(name: "pat", number: 35, imageName: "img1.png")
-        var person4 = Person(name: "patty", number: 22, imageName: "img2.png")
-        
+        var person1 = Person(name: "Nyheder")
+        var person2 = Person(name: "Top Tumblere")
+        var person3 = Person(name: "Sværdhedsrekorder")
+        var person4 = Person(name: "Video")
+        var person5 = Person(name: "Kalender")
+
         arrayOfPersons.append(person1)
         arrayOfPersons.append(person2)
         arrayOfPersons.append(person3)
         arrayOfPersons.append(person4)
+        arrayOfPersons.append(person5)
     }
 
     
@@ -57,7 +59,7 @@ class ViewController: UIViewController, UITableViewDataSource, UITableViewDelega
         }
         
         let person = arrayOfPersons[indexPath.row]
-        cell.setCell(person.name, rightLabelInt: person.number, imageName: person.imageName)
+        cell.setCell(person.name)
         
         return cell
     }
@@ -70,11 +72,10 @@ class ViewController: UIViewController, UITableViewDataSource, UITableViewDelega
         var detailedViewController: DetailViewController = self.storyboard?.instantiateViewControllerWithIdentifier("DetailViewController") as DetailViewController
         
         detailedViewController.nameString = person.name
-        detailedViewController.ageInt = person.number
-        detailedViewController.myDetailedImageName = person.imageName
+
         
         self.presentViewController(detailedViewController, animated: true, completion: nil)
-                
+        
     }
     
     
