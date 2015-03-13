@@ -10,12 +10,12 @@ import UIKit
 
 class ViewController: UIViewController, UITableViewDataSource, UITableViewDelegate {
     @IBOutlet weak var myTableView: UITableView!
-    var arrayOfPersons: [Person] = [Person]()
+    var arrayOfCategories: [categories] = [categories]()
 
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        self.setUpPersons()
+        self.setUpCategories()
         
     }
 
@@ -24,25 +24,25 @@ class ViewController: UIViewController, UITableViewDataSource, UITableViewDelega
         // Dispose of any resources that can be recreated.
     }
     
-    func setUpPersons(){
+    func setUpCategories(){
     
-        var person1 = Person(name: "Nyheder")
-        var person2 = Person(name: "Top Tumblere")
-        var person3 = Person(name: "Sværdhedsrekorder")
-        var person4 = Person(name: "Video")
-        var person5 = Person(name: "Kalender")
+        var category1 = categories(name: "Nyheder")
+        var category2 = categories(name: "Top Tumblere")
+        var category3 = categories(name: "Sværdhedsrekorder")
+        var category4 = categories(name: "Video")
+        var category5 = categories(name: "Kalender")
 
-        arrayOfPersons.append(person1)
-        arrayOfPersons.append(person2)
-        arrayOfPersons.append(person3)
-        arrayOfPersons.append(person4)
-        arrayOfPersons.append(person5)
+        arrayOfCategories.append(category1)
+        arrayOfCategories.append(category2)
+        arrayOfCategories.append(category3)
+        arrayOfCategories.append(category4)
+        arrayOfCategories.append(category5)
     }
 
     
     func tableView(tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         
-        return arrayOfPersons.count
+        return arrayOfCategories.count
     }
     
     
@@ -58,7 +58,7 @@ class ViewController: UIViewController, UITableViewDataSource, UITableViewDelega
             cell.backgroundColor = UIColor.orangeColor()
         }
         
-        let person = arrayOfPersons[indexPath.row]
+        let person = arrayOfCategories[indexPath.row]
         cell.setCell(person.name)
         
         return cell
@@ -67,7 +67,7 @@ class ViewController: UIViewController, UITableViewDataSource, UITableViewDelega
     
     func tableView(tableView: UITableView, didSelectRowAtIndexPath indexPath: NSIndexPath) {
     
-        let person = arrayOfPersons[indexPath.row]
+        let person = arrayOfCategories[indexPath.row]
         
         var detailedViewController: DetailViewController = self.storyboard?.instantiateViewControllerWithIdentifier("DetailViewController") as DetailViewController
         

@@ -9,7 +9,7 @@
 import Foundation
 
 
-class Person {
+class categories {
     var name = "name"
     
     init(name: String){
