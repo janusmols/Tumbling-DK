@@ -9,7 +9,7 @@
 import UIKit
 
 class CustomCell: UITableViewCell {
-
+//set up the label
     @IBOutlet weak var titleLabel: UILabel!
     
     
@@ -24,9 +24,9 @@ class CustomCell: UITableViewCell {
         // Configure the view for the selected state
     }
        
-    func setCell(leftLabelText: String){
+    func setCell(titleLabelText: String){
         
-        self.titleLabel.text = leftLabelText
+        self.titleLabel.text = titleLabelText
         
     }
 
