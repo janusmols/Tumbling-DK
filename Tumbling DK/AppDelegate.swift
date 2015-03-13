@@ -9,6 +9,7 @@
 import UIKit
 import CoreData
 
+
 @UIApplicationMain
 class AppDelegate: UIResponder, UIApplicationDelegate {
 
@@ -17,6 +18,13 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 
     func application(application: UIApplication, didFinishLaunchingWithOptions launchOptions: [NSObject: AnyObject]?) -> Bool {
         // Override point for customization after application launch.
+        
+        //[Parse enableLocalDatastore];
+        // Initialize Parse.
+        Parse.setApplicationId("hi8Wwxyq9WOkvi4QsPvrIZQmKXJ0eWSN9y7qWjSO", clientKey: "EwWRbbgkV0FigarFMV0PtLA018aX0lfwJFtHKpYJ")
+        // [Optional] Track statistics around application opens.
+        //[PFAnalytics trackAppOpenedWithLaunchOptions:launchOptions];
+        
         return true
     }
 
@@ -36,7 +44,11 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 
     func applicationDidBecomeActive(application: UIApplication) {
         // Restart any tasks that were paused (or not yet started) while the application was inactive. If the application was previously in the background, optionally refresh the user interface.
-    }
+        
+
+           }
+    
+    
 
     func applicationWillTerminate(application: UIApplication) {
         // Called when the application is about to terminate. Save data if appropriate. See also applicationDidEnterBackground:.
