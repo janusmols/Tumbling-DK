@@ -7,17 +7,17 @@
         <!--View Controller-->
         <scene sceneID="CaO-Wv-dij">
             <objects>
-                <viewController id="4ds-K4-Hbe" customClass="ViewController" customModule="Tumbling_DK" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="homeViewController" id="4ds-K4-Hbe" customClass="ViewController" customModule="Tumbling_DK" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="MgQ-io-utK"/>
                         <viewControllerLayoutGuide type="bottom" id="iwe-kg-ydX"/>
                     </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="bqD-1S-6Fg">
-                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <tableView clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="75" sectionHeaderHeight="22" sectionFooterHeight="22" translatesAutoresizingMaskIntoConstraints="NO" id="hey-tt-DfT">
-                                <rect key="frame" x="0.0" y="28" width="320" height="540"/>
+                                <rect key="frame" x="0.0" y="28" width="414" height="708"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <prototypes>
                                     <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="Cell" rowHeight="75" id="mlC-zx-OKS" customClass="CustomCell" customModule="Tumbling_DK" customModuleProvider="target">
@@ -27,7 +27,7 @@
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="MCU-FR-y5g">
-                                                    <rect key="frame" x="11" y="19" width="300" height="38"/>
+                                                    <rect key="frame" x="11" y="20" width="300" height="38"/>
                                                     <constraints>
                                                         <constraint firstAttribute="width" constant="300" id="KIz-ZU-sKL"/>
                                                         <constraint firstAttribute="height" constant="38" id="XNn-GT-paN"/>
@@ -56,6 +56,7 @@
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     </view>
+                    <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina55"/>
                     <connections>
                         <outlet property="myTableView" destination="hey-tt-DfT" id="bKR-Sw-PN7"/>
                     </connections>
@@ -76,27 +77,16 @@
                         <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="oK2-a0-nDz">
-                                <rect key="frame" x="201" y="204" width="162" height="67"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
-                                <nil key="highlightedColor"/>
-                            </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="0k3-rz-exk">
                                 <rect key="frame" x="110" y="85" width="136" height="50"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Cau-Dj-bo3">
-                                <rect key="frame" x="24" y="320" width="273" height="213"/>
-                            </imageView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     </view>
                     <connections>
-                        <outlet property="ageLabel" destination="oK2-a0-nDz" id="gCm-Zg-u7f"/>
-                        <outlet property="myDetailedImageView" destination="Cau-Dj-bo3" id="d7Y-iy-t3T"/>
                         <outlet property="nameLabel" destination="0k3-rz-exk" id="XHK-w8-ZeC"/>
                     </connections>
                 </viewController>

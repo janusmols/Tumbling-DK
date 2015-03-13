@@ -10,19 +10,13 @@ import UIKit
 
 class DetailViewController: UIViewController {
     @IBOutlet weak var nameLabel: UILabel!
-    @IBOutlet weak var ageLabel: UILabel!
-    @IBOutlet weak var myDetailedImageView: UIImageView!
 
     var nameString: String?
-    var ageInt: Int?
-    var myDetailedImageName: String?
     
     override func viewDidLoad() {
         super.viewDidLoad()
         
         self.nameLabel.text = nameString
-        self.ageLabel.text = "\(ageInt)"
-        self.myDetailedImageView.image = UIImage(named: myDetailedImageName!)
     }
 
     
@@ -34,7 +28,10 @@ class DetailViewController: UIViewController {
     
     
 override func touchesBegan(touches: NSSet, withEvent event: UIEvent) {
-        self.dismissViewControllerAnimated(true, completion: nil)
+       // self.dismissViewControllerAnimated(true, completion: nil)
+    
+    var homeViewController: ViewController = self.storyboard?.instantiateViewControllerWithIdentifier("homeViewController") as ViewController
+    self.presentViewController(homeViewController, animated: true, completion: nil)
     }
 
     }

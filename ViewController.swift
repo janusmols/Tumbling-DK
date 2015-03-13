@@ -19,6 +19,8 @@ class ViewController: UIViewController, UITableViewDataSource, UITableViewDelega
         //call the setUpCategories func
         self.setUpCategories()
         
+        self.myTableView.estimatedRowHeight = 89
+        self.myTableView.rowHeight = UITableViewAutomaticDimension
     }
 
     override func didReceiveMemoryWarning() {
