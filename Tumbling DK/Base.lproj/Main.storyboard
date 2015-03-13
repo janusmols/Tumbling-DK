@@ -43,7 +43,7 @@
                                             </constraints>
                                         </tableViewCellContentView>
                                         <connections>
-                                            <outlet property="leftLabel" destination="MCU-FR-y5g" id="LbM-Hg-G54"/>
+                                            <outlet property="titleLabel" destination="MCU-FR-y5g" id="ktK-z2-Kam"/>
                                         </connections>
                                     </tableViewCell>
                                 </prototypes>

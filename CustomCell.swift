@@ -10,7 +10,7 @@ import UIKit
 
 class CustomCell: UITableViewCell {
 
-    @IBOutlet weak var leftLabel: UILabel!
+    @IBOutlet weak var titleLabel: UILabel!
     
     
     override func awakeFromNib() {
@@ -26,7 +26,7 @@ class CustomCell: UITableViewCell {
        
     func setCell(leftLabelText: String){
         
-        self.leftLabel.text = leftLabelText
+        self.titleLabel.text = leftLabelText
         
     }
 
