@@ -11,6 +11,7 @@ import UIKit
 class CustomCell: UITableViewCell {
 //set up the label
     @IBOutlet weak var titleLabel: UILabel!
+    @IBOutlet weak var imageOut: UIImageView!
     
     
     override func awakeFromNib() {
@@ -24,10 +25,10 @@ class CustomCell: UITableViewCell {
         // Configure the view for the selected state
     }
        
-    func setCell(titleLabelText: String){
+    func setCell(titleLabelText: String, imageName: String){
         
         self.titleLabel.text = titleLabelText
-        
+        self.imageOut.image = UIImage(named: imageName)
     }
 
 }

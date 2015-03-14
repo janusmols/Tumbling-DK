@@ -11,10 +11,12 @@ import Foundation
 
 class categories {
     var title = "title"
+    var imageName = "blank"
     
-    init(title: String){
+    init(title: String, imageName: String){
         
         self.title = title
+        self.imageName = imageName
 
     }
 

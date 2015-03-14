@@ -19,8 +19,7 @@ class ViewController: UIViewController, UITableViewDataSource, UITableViewDelega
         //call the setUpCategories func
         self.setUpCategories()
         
-        self.myTableView.estimatedRowHeight = 89
-        self.myTableView.rowHeight = UITableViewAutomaticDimension
+
     }
 
     override func didReceiveMemoryWarning() {
@@ -30,11 +29,11 @@ class ViewController: UIViewController, UITableViewDataSource, UITableViewDelega
     
     func setUpCategories(){
     //set up the the titles for the tableview
-        var category1 = categories(title: "Nyheder")
-        var category2 = categories(title: "Top Tumblere")
-        var category3 = categories(title: "Sværdhedsrekorder")
-        var category4 = categories(title: "Video")
-        var category5 = categories(title: "Kalender")
+        var category1 = categories(title: "Nyheder", imageName: "img1")
+        var category2 = categories(title: "Top Tumblere", imageName: "img2")
+        var category3 = categories(title: "Sværhedsrekorder", imageName: "img3")
+        var category4 = categories(title: "Video", imageName: "img4")
+        var category5 = categories(title: "Kalender", imageName: "img5")
 
         //connect the titles to the categoryarray
         arrayOfCategories.append(category1)
@@ -58,7 +57,8 @@ class ViewController: UIViewController, UITableViewDataSource, UITableViewDelega
         cell.backgroundColor = UIColor.groupTableViewBackgroundColor()
 
         let categories = arrayOfCategories[indexPath.row]
-        cell.setCell(categories.title)
+        
+        cell.setCell(categories.title, imageName: categories.imageName)
         
         return cell
     }
