@@ -114,8 +114,8 @@
                         <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="0k3-rz-exk">
-                                <rect key="frame" x="10" y="117" width="136" height="50"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="NewsScreen" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="0k3-rz-exk">
+                                <rect key="frame" x="101" y="133" width="136" height="50"/>
                                 <color key="backgroundColor" red="1" green="0.0" blue="0.10159769239999999" alpha="1" colorSpace="calibratedRGB"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <color key="textColor" red="0.97647058819999999" green="0.90588235289999997" blue="0.094117647060000004" alpha="1" colorSpace="calibratedRGB"/>
@@ -141,6 +141,15 @@
                     <view key="view" contentMode="scaleToFill" id="a0y-7G-oqT">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Toptumblerscreen" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="6fn-r3-K0z">
+                                <rect key="frame" x="120" y="79" width="138" height="50"/>
+                                <color key="backgroundColor" red="1" green="0.0" blue="0.10159769239999999" alpha="1" colorSpace="calibratedRGB"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" red="0.97647058819999999" green="0.90588235289999997" blue="0.094117647060000004" alpha="1" colorSpace="calibratedRGB"/>
+                                <color key="highlightedColor" red="0.98039215690000003" green="0.91372549020000005" blue="0.1058823529" alpha="1" colorSpace="calibratedRGB"/>
+                            </label>
+                        </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     </view>
                     <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina55"/>
@@ -149,10 +158,10 @@
             </objects>
             <point key="canvasLocation" x="469" y="292"/>
         </scene>
-        <!--View Controller-->
+        <!--Calender Screen-->
         <scene sceneID="2kF-I9-vIq">
             <objects>
-                <viewController id="ZKG-WR-9Yd" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="CalenderScreen" id="ZKG-WR-9Yd" customClass="CalenderScreen" customModule="Tumbling_DK" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="lA2-6T-1Bo"/>
                         <viewControllerLayoutGuide type="bottom" id="udy-kO-7xK"/>
@@ -160,6 +169,15 @@
                     <view key="view" contentMode="scaleToFill" id="eKe-VK-odS">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="calenderscreen" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="cA6-Qr-w55">
+                                <rect key="frame" x="29" y="101" width="136" height="50"/>
+                                <color key="backgroundColor" red="1" green="0.0" blue="0.10159769239999999" alpha="1" colorSpace="calibratedRGB"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" red="0.97647058819999999" green="0.90588235289999997" blue="0.094117647060000004" alpha="1" colorSpace="calibratedRGB"/>
+                                <color key="highlightedColor" red="0.98039215690000003" green="0.91372549020000005" blue="0.1058823529" alpha="1" colorSpace="calibratedRGB"/>
+                            </label>
+                        </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     </view>
                     <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina55"/>
@@ -168,10 +186,10 @@
             </objects>
             <point key="canvasLocation" x="1382" y="-519"/>
         </scene>
-        <!--View Controller-->
+        <!--Records Screen-->
         <scene sceneID="e7b-oe-9J7">
             <objects>
-                <viewController id="pST-CW-DhF" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="RecordsScreen" id="pST-CW-DhF" customClass="RecordsScreen" customModule="Tumbling_DK" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="k76-A5-n2Y"/>
                         <viewControllerLayoutGuide type="bottom" id="yO2-9Q-4LQ"/>
@@ -179,6 +197,15 @@
                     <view key="view" contentMode="scaleToFill" id="Zlu-MU-fSd">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="recordscreen" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="alh-dt-uLp">
+                                <rect key="frame" x="99" y="128" width="136" height="50"/>
+                                <color key="backgroundColor" red="1" green="0.0" blue="0.10159769239999999" alpha="1" colorSpace="calibratedRGB"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" red="0.97647058819999999" green="0.90588235289999997" blue="0.094117647060000004" alpha="1" colorSpace="calibratedRGB"/>
+                                <color key="highlightedColor" red="0.98039215690000003" green="0.91372549020000005" blue="0.1058823529" alpha="1" colorSpace="calibratedRGB"/>
+                            </label>
+                        </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     </view>
                     <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina55"/>
@@ -187,10 +214,10 @@
             </objects>
             <point key="canvasLocation" x="922" y="292"/>
         </scene>
-        <!--View Controller-->
+        <!--Video Screen-->
         <scene sceneID="Wlf-j4-lGe">
             <objects>
-                <viewController id="hG3-Pl-zgb" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="VideoScreen" id="hG3-Pl-zgb" customClass="VideoScreen" customModule="Tumbling_DK" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="tGl-pE-jqu"/>
                         <viewControllerLayoutGuide type="bottom" id="Xrx-sv-neK"/>
@@ -198,6 +225,15 @@
                     <view key="view" contentMode="scaleToFill" id="6ib-om-1Pu">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="videoscreen" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Oap-Ih-8JP">
+                                <rect key="frame" x="58" y="186" width="136" height="50"/>
+                                <color key="backgroundColor" red="1" green="0.0" blue="0.10159769239999999" alpha="1" colorSpace="calibratedRGB"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" red="0.97647058819999999" green="0.90588235289999997" blue="0.094117647060000004" alpha="1" colorSpace="calibratedRGB"/>
+                                <color key="highlightedColor" red="0.98039215690000003" green="0.91372549020000005" blue="0.1058823529" alpha="1" colorSpace="calibratedRGB"/>
+                            </label>
+                        </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     </view>
                     <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina55"/>

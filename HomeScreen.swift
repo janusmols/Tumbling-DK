@@ -81,17 +81,17 @@ class ViewController: UIViewController, UITableViewDataSource, UITableViewDelega
             break
             
         case 2:
-            var recordsScreen: NewsScreen = self.storyboard?.instantiateViewControllerWithIdentifier("NewsScreen") as NewsScreen
+            var recordsScreen: RecordsScreen = self.storyboard?.instantiateViewControllerWithIdentifier("RecordsScreen") as RecordsScreen
             self.presentViewController(recordsScreen, animated: true, completion: nil)
             break
             
         case 3:
-            var videoScreen: NewsScreen = self.storyboard?.instantiateViewControllerWithIdentifier("NewsScreen") as NewsScreen
+            var videoScreen: VideoScreen = self.storyboard?.instantiateViewControllerWithIdentifier("VideoScreen") as VideoScreen
             self.presentViewController(videoScreen, animated: true, completion: nil)
             break
             
         case 4:
-            var calenderScreen: NewsScreen = self.storyboard?.instantiateViewControllerWithIdentifier("NewsScreen") as NewsScreen
+            var calenderScreen: CalenderScreen = self.storyboard?.instantiateViewControllerWithIdentifier("CalenderScreen") as CalenderScreen
             self.presentViewController(calenderScreen, animated: true, completion: nil)
             break
             
