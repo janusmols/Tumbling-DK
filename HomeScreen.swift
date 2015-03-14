@@ -30,7 +30,7 @@ class ViewController: UIViewController, UITableViewDataSource, UITableViewDelega
     func setUpCategories(){
     //set up the the titles for the tableview
         var category1 = categories(title: "Nyheder", imageName: "img1")
-        var category2 = categories(title: "Top Tumblere", imageName: "img2")
+        var category2 = categories(title: "Top tumblere", imageName: "img2")
         var category3 = categories(title: "Sværhedsrekorder", imageName: "img3")
         var category4 = categories(title: "Video", imageName: "img4")
         var category5 = categories(title: "Kalender", imageName: "img5")
@@ -68,6 +68,7 @@ class ViewController: UIViewController, UITableViewDataSource, UITableViewDelega
     
         let categoriesrow = arrayOfCategories[indexPath.row]
         
+        //The category you choose would send you to its own View
         switch(indexPath.row){
             
         case 0:

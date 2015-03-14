@@ -20,12 +20,6 @@ class RecordsScreen: UIViewController {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
     }
-    
-    override func touchesBegan(touches: NSSet, withEvent event: UIEvent) {
-        // self.dismissViewControllerAnimated(true, completion: nil)
-        
-        var homeViewController: ViewController = self.storyboard?.instantiateViewControllerWithIdentifier("homeViewController") as ViewController
-        self.presentViewController(homeViewController, animated: true, completion: nil)
-    }
+
 
 }
