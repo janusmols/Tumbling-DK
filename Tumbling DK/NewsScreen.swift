@@ -8,15 +8,12 @@
 
 import UIKit
 
-class DetailViewController: UIViewController {
-    @IBOutlet weak var nameLabel: UILabel!
-
-    var nameString: String?
+class NewsScreen: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        self.nameLabel.text = nameString
+
     }
 
     

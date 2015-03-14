@@ -66,15 +66,45 @@ class ViewController: UIViewController, UITableViewDataSource, UITableViewDelega
     
     func tableView(tableView: UITableView, didSelectRowAtIndexPath indexPath: NSIndexPath) {
     
-        let categories = arrayOfCategories[indexPath.row]
+        let categoriesrow = arrayOfCategories[indexPath.row]
         
-        var detailedViewController: DetailViewController = self.storyboard?.instantiateViewControllerWithIdentifier("DetailViewController") as DetailViewController
-        
-        detailedViewController.nameString = categories.title
+        switch(indexPath.row){
+            
+        case 0:
+            var newsScreen: NewsScreen = self.storyboard?.instantiateViewControllerWithIdentifier("NewsScreen") as NewsScreen
+            self.presentViewController(newsScreen, animated: true, completion: nil)
+            break
+            
+        case 1:
+            var topTumblersScreen: TopTumblersScreen = self.storyboard?.instantiateViewControllerWithIdentifier("TopTumblersScreen") as TopTumblersScreen
+            self.presentViewController(topTumblersScreen, animated: true, completion: nil)
+            break
+            
+        case 2:
+            var recordsScreen: NewsScreen = self.storyboard?.instantiateViewControllerWithIdentifier("NewsScreen") as NewsScreen
+            self.presentViewController(recordsScreen, animated: true, completion: nil)
+            break
+            
+        case 3:
+            var videoScreen: NewsScreen = self.storyboard?.instantiateViewControllerWithIdentifier("NewsScreen") as NewsScreen
+            self.presentViewController(videoScreen, animated: true, completion: nil)
+            break
+            
+        case 4:
+            var calenderScreen: NewsScreen = self.storyboard?.instantiateViewControllerWithIdentifier("NewsScreen") as NewsScreen
+            self.presentViewController(calenderScreen, animated: true, completion: nil)
+            break
+            
+        default:
+            break
+            
 
+            
+            
+        }
         
-        self.presentViewController(detailedViewController, animated: true, completion: nil)
         
+
     }
     
     

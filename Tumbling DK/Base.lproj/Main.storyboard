@@ -102,10 +102,10 @@
             </objects>
             <point key="canvasLocation" x="922" y="-519"/>
         </scene>
-        <!--Detail View Controller-->
+        <!--News Screen-->
         <scene sceneID="eXw-Eb-Mle">
             <objects>
-                <viewController storyboardIdentifier="DetailViewController" id="SvU-2R-x3y" customClass="DetailViewController" customModule="Tumbling_DK" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="NewsScreen" useStoryboardIdentifierAsRestorationIdentifier="YES" id="SvU-2R-x3y" customClass="NewsScreen" customModule="Tumbling_DK" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="hb5-li-XwA"/>
                         <viewControllerLayoutGuide type="bottom" id="Q9E-AB-61j"/>
@@ -115,27 +115,25 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="0k3-rz-exk">
-                                <rect key="frame" x="110" y="85" width="136" height="50"/>
+                                <rect key="frame" x="10" y="117" width="136" height="50"/>
+                                <color key="backgroundColor" red="1" green="0.0" blue="0.10159769239999999" alpha="1" colorSpace="calibratedRGB"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
-                                <nil key="highlightedColor"/>
+                                <color key="textColor" red="0.97647058819999999" green="0.90588235289999997" blue="0.094117647060000004" alpha="1" colorSpace="calibratedRGB"/>
+                                <color key="highlightedColor" red="0.98039215690000003" green="0.91372549020000005" blue="0.1058823529" alpha="1" colorSpace="calibratedRGB"/>
                             </label>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     </view>
                     <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina55"/>
-                    <connections>
-                        <outlet property="nameLabel" destination="0k3-rz-exk" id="XHK-w8-ZeC"/>
-                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="vnh-yL-enG" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="469" y="-519"/>
         </scene>
-        <!--View Controller-->
+        <!--Top Tumblers Screen-->
         <scene sceneID="ktn-2d-e5e">
             <objects>
-                <viewController id="lsS-os-EKt" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="TopTumblersScreen" id="lsS-os-EKt" customClass="TopTumblersScreen" customModule="Tumbling_DK" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="MAh-1e-9wz"/>
                         <viewControllerLayoutGuide type="bottom" id="EYI-ky-2bb"/>
