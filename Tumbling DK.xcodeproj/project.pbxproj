@@ -9,8 +9,8 @@
 /* Begin PBXBuildFile section */
 		613E67F51AB07E3B007C21DB /* menu-24.png in Resources */ = {isa = PBXBuildFile; fileRef = 613E67F41AB07E3B007C21DB /* menu-24.png */; };
 		613E67FB1AB31F85007C21DB /* CustomCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 613E67FA1AB31F85007C21DB /* CustomCell.swift */; };
-		613E67FD1AB320AD007C21DB /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 613E67FC1AB320AD007C21DB /* ViewController.swift */; };
-		613E67FF1AB32170007C21DB /* Person.swift in Sources */ = {isa = PBXBuildFile; fileRef = 613E67FE1AB32170007C21DB /* Person.swift */; };
+		613E67FD1AB320AD007C21DB /* HomeScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = 613E67FC1AB320AD007C21DB /* HomeScreen.swift */; };
+		613E67FF1AB32170007C21DB /* Category.swift in Sources */ = {isa = PBXBuildFile; fileRef = 613E67FE1AB32170007C21DB /* Category.swift */; };
 		613E68051AB32C82007C21DB /* DetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 613E68041AB32C82007C21DB /* DetailViewController.swift */; };
 		613E680A1AB36EDC007C21DB /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 613E68081AB36EDC007C21DB /* Main.storyboard */; };
 		613E680C1AB3913C007C21DB /* img1.png in Resources */ = {isa = PBXBuildFile; fileRef = 613E680B1AB3913C007C21DB /* img1.png */; };
@@ -56,8 +56,8 @@
 /* Begin PBXFileReference section */
 		613E67F41AB07E3B007C21DB /* menu-24.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "menu-24.png"; sourceTree = "<group>"; };
 		613E67FA1AB31F85007C21DB /* CustomCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = CustomCell.swift; path = ../CustomCell.swift; sourceTree = "<group>"; };
-		613E67FC1AB320AD007C21DB /* ViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = ViewController.swift; path = ../ViewController.swift; sourceTree = "<group>"; };
-		613E67FE1AB32170007C21DB /* Person.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Person.swift; sourceTree = "<group>"; };
+		613E67FC1AB320AD007C21DB /* HomeScreen.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = HomeScreen.swift; path = ../HomeScreen.swift; sourceTree = "<group>"; };
+		613E67FE1AB32170007C21DB /* Category.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Category.swift; sourceTree = "<group>"; };
 		613E68041AB32C82007C21DB /* DetailViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DetailViewController.swift; sourceTree = "<group>"; };
 		613E68091AB36EDC007C21DB /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		613E680B1AB3913C007C21DB /* img1.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = img1.png; sourceTree = "<group>"; };
@@ -156,8 +156,8 @@
 				61CF0FE81AA8E5790040FCE9 /* MyPlaygroundparse.playground */,
 				61CF0FA01AA8C1300040FCE9 /* AppDelegate.swift */,
 				61CF0FE91AA8E6380040FCE9 /* view.swift */,
-				613E67FE1AB32170007C21DB /* Person.swift */,
-				613E67FC1AB320AD007C21DB /* ViewController.swift */,
+				613E67FE1AB32170007C21DB /* Category.swift */,
+				613E67FC1AB320AD007C21DB /* HomeScreen.swift */,
 				613E67FA1AB31F85007C21DB /* CustomCell.swift */,
 				613E68041AB32C82007C21DB /* DetailViewController.swift */,
 				613E68081AB36EDC007C21DB /* Main.storyboard */,
@@ -331,8 +331,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				613E67FF1AB32170007C21DB /* Person.swift in Sources */,
-				613E67FD1AB320AD007C21DB /* ViewController.swift in Sources */,
+				613E67FF1AB32170007C21DB /* Category.swift in Sources */,
+				613E67FD1AB320AD007C21DB /* HomeScreen.swift in Sources */,
 				61CF0FA41AA8C1300040FCE9 /* Tumbling_DK.xcdatamodeld in Sources */,
 				613E67FB1AB31F85007C21DB /* CustomCell.swift in Sources */,
 				61CF0FEA1AA8E6380040FCE9 /* view.swift in Sources */,
