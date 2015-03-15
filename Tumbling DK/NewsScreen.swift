@@ -15,10 +15,11 @@ class NewsScreen: UIViewController {
    @IBOutlet weak var newsLabel: UITextView!
     
     
-   var newstext = "blank"
+   var newstext = ""
     
     override func viewDidLoad() {
         super.viewDidLoad()
+
         //Users are not allowed to edit the news
         newsLabel.editable = false
     
