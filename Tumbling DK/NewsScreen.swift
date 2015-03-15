@@ -14,13 +14,15 @@ class NewsScreen: UIViewController {
     
    @IBOutlet weak var newsLabel: UITextView!
     
+    
    var newstext = "blank"
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        
+        //Users are not allowed to edit the news
+        newsLabel.editable = false
     
-        
+        //creating a query which retrive string from parse
         var query = PFQuery(className:"NewsFeed")
         query.getObjectInBackgroundWithId("bvNjukdApA") {
             (newsfeed: PFObject!, error: NSError!) -> Void in

@@ -23,6 +23,7 @@
 		613E68221AB4C0A5007C21DB /* RecordsScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = 613E68211AB4C0A5007C21DB /* RecordsScreen.swift */; };
 		613E68241AB4C0BB007C21DB /* VideoScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = 613E68231AB4C0BB007C21DB /* VideoScreen.swift */; };
 		613E68261AB4C0D8007C21DB /* CalenderScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = 613E68251AB4C0D8007C21DB /* CalenderScreen.swift */; };
+		613E68281AB50F67007C21DB /* tumblingimg.png in Resources */ = {isa = PBXBuildFile; fileRef = 613E68271AB50F67007C21DB /* tumblingimg.png */; };
 		61CF0FA11AA8C1300040FCE9 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 61CF0FA01AA8C1300040FCE9 /* AppDelegate.swift */; };
 		61CF0FA41AA8C1300040FCE9 /* Tumbling_DK.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 61CF0FA21AA8C1300040FCE9 /* Tumbling_DK.xcdatamodeld */; };
 		61CF0FAB1AA8C1300040FCE9 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 61CF0FAA1AA8C1300040FCE9 /* Images.xcassets */; };
@@ -74,6 +75,7 @@
 		613E68211AB4C0A5007C21DB /* RecordsScreen.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = RecordsScreen.swift; path = ../RecordsScreen.swift; sourceTree = "<group>"; };
 		613E68231AB4C0BB007C21DB /* VideoScreen.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = VideoScreen.swift; path = ../VideoScreen.swift; sourceTree = "<group>"; };
 		613E68251AB4C0D8007C21DB /* CalenderScreen.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = CalenderScreen.swift; path = ../CalenderScreen.swift; sourceTree = "<group>"; };
+		613E68271AB50F67007C21DB /* tumblingimg.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = tumblingimg.png; sourceTree = "<group>"; };
 		61CF0F9B1AA8C1300040FCE9 /* Tumbling DK.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Tumbling DK.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		61CF0F9F1AA8C1300040FCE9 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		61CF0FA01AA8C1300040FCE9 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -191,6 +193,7 @@
 				613E68131AB39554007C21DB /* img4.png */,
 				613E68151AB3957D007C21DB /* img5.png */,
 				613E68171AB4A639007C21DB /* GymDanmarkTumbling.png */,
+				613E68271AB50F67007C21DB /* tumblingimg.png */,
 				61CF0F9F1AA8C1300040FCE9 /* Info.plist */,
 			);
 			name = "Supporting Files";
@@ -324,6 +327,7 @@
 				613E68141AB39554007C21DB /* img4.png in Resources */,
 				613E68181AB4A639007C21DB /* GymDanmarkTumbling.png in Resources */,
 				613E67F51AB07E3B007C21DB /* menu-24.png in Resources */,
+				613E68281AB50F67007C21DB /* tumblingimg.png in Resources */,
 				61CF0FAB1AA8C1300040FCE9 /* Images.xcassets in Resources */,
 				613E680C1AB3913C007C21DB /* img1.png in Resources */,
 			);
