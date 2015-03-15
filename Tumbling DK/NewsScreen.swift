@@ -10,17 +10,16 @@ import UIKit
 
 class NewsScreen: UIViewController {
     
-    @IBOutlet weak var scroller: UIScrollView!
-    @IBOutlet weak var newsLabel: UILabel!
+
+    
+   @IBOutlet weak var newsLabel: UITextView!
+    
    var newstext = "blank"
     
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        scroller.userInteractionEnabled = true
-        scroller.contentSize = CGSizeMake(320, 1000)
-        
-        
+    
         
         var query = PFQuery(className:"NewsFeed")
         query.getObjectInBackgroundWithId("bvNjukdApA") {

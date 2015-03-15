@@ -133,41 +133,32 @@
                                 <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" showsHorizontalScrollIndicator="NO" translatesAutoresizingMaskIntoConstraints="NO" id="uSj-fb-Snd">
-                                <rect key="frame" x="0.0" y="63" width="414" height="671"/>
-                                <subviews>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" misplaced="YES" lineBreakMode="tailTruncation" numberOfLines="100" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="uwV-bV-UkR">
-                                        <rect key="frame" x="17" y="8" width="382" height="82"/>
-                                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                                        <constraints>
-                                            <constraint firstAttribute="width" constant="382" id="jQC-Jn-Koy"/>
-                                        </constraints>
-                                        <string key="text">hejhejhejhejhejhejhejhejhejhejhejhejhejhejhejhejhejhejhejhejhejhejhejhejhejhejhejhejhejhejhejhejhejhejhejhejhejhejhejhejhejhejhejhejhejhejhejhejhejhejhejhejhejhejhejhejhejhejhejhej</string>
-                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                        <nil key="highlightedColor"/>
-                                    </label>
-                                </subviews>
-                                <constraints>
-                                    <constraint firstItem="uwV-bV-UkR" firstAttribute="leading" secondItem="uSj-fb-Snd" secondAttribute="leading" constant="8" id="IDb-1u-Yj2"/>
-                                    <constraint firstItem="uwV-bV-UkR" firstAttribute="top" secondItem="uSj-fb-Snd" secondAttribute="top" constant="8" id="dh1-yS-RL4"/>
-                                </constraints>
-                            </scrollView>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="gLV-xw-gop">
+                                <rect key="frame" x="16" y="64" width="382" height="672"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <string key="text">Lorem ipsum dolor sit er elit lamet, consectetaur cillium adipisicing pecu, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Nam liber te conscient to factor tum poen legum odioque civiuda.</string>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
+                            <constraint firstItem="gLV-xw-gop" firstAttribute="trailing" secondItem="JZC-ja-qiT" secondAttribute="trailingMargin" constant="10" id="36T-U5-4GT"/>
                             <constraint firstItem="Dtn-4C-mJP" firstAttribute="centerY" secondItem="VxN-gP-lvf" secondAttribute="centerY" constant="-0.5" id="HZT-TT-175"/>
+                            <constraint firstItem="gLV-xw-gop" firstAttribute="leading" secondItem="JZC-ja-qiT" secondAttribute="leadingMargin" id="PQA-QM-CPQ"/>
                             <constraint firstAttribute="centerX" secondItem="Dtn-4C-mJP" secondAttribute="centerX" constant="-0.5" id="Uu9-IT-nZk"/>
+                            <constraint firstItem="gLV-xw-gop" firstAttribute="top" secondItem="VxN-gP-lvf" secondAttribute="bottom" id="clI-Lg-f7w"/>
+                            <constraint firstItem="Q9E-AB-61j" firstAttribute="top" secondItem="gLV-xw-gop" secondAttribute="bottom" id="yL6-vf-pKD"/>
                         </constraints>
                     </view>
                     <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina55"/>
                     <connections>
-                        <outlet property="newsLabel" destination="uwV-bV-UkR" id="XS8-cc-bwO"/>
-                        <outlet property="scroller" destination="uSj-fb-Snd" id="Oz5-J3-kme"/>
+                        <outlet property="newsLabel" destination="gLV-xw-gop" id="WZO-cv-13C"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="vnh-yL-enG" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="64" y="-536"/>
+            <point key="canvasLocation" x="-390" y="-540"/>
         </scene>
         <!--Top Tumblers Screen-->
         <scene sceneID="ktn-2d-e5e">
