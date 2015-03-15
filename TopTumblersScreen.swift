@@ -15,6 +15,7 @@ class TopTumblersScreen: UIViewController {
     
     var topTumblerTitle = ""
     var topTumblerText = ""
+    var toptumblerPersonImage: UIImage?
 
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -26,35 +27,35 @@ class TopTumblersScreen: UIViewController {
         //creating a query which retrive the title string from parse
         var query = PFQuery(className:"TopTumbler")
         query.getObjectInBackgroundWithId("KZKxYp9aWz") {
-            (toptumblerstring: PFObject!, error: NSError!) -> Void in
-            if error == nil && toptumblerstring != nil {
+            (toptumblertitle: PFObject!, error: NSError!) -> Void in
+            if error == nil && toptumblertitle != nil {
                 
-                println(toptumblerstring["toptumblerstring"] as String)
-                self.topTumblerTitle = toptumblerstring["toptumblerstring"] as String
+                println(toptumblertitle["toptumblertitle"] as String)
+                self.topTumblerTitle = toptumblertitle["toptumblertitle"] as String
                 println(self.topTumblerTitle)
                 self.topTumblerTitleLabel.text = String(self.topTumblerTitle)
             } else {
                 println(error)
             }
         }
-    }
-    
-    //creating a query which retrive the text string from parse
-    var querytext = PFQuery(className:"TopTumbler")
-    querytext.getObjectInBackgroundWithId("GoDJdDBTr4") {
-    (toptumblerstring: PFObject!, error: NSError!) -> Void in
-    if error == nil && toptumblerstring != nil {
-    
-    println(toptumblerstring["toptumblerstring"] as String)
-    self.topTumblerText = toptumblerstring["toptumblerstring"] as String
-    println(self.topTumblerText)
-    self.topTumblerTextView.text = String(self.topTumblerText)
-    } else {
-    println(error)
-    }
-    }
+        
+        //creating a query which retrive the text string from parse
+        var querytext = PFQuery(className:"TopTumbler")
+        querytext.getObjectInBackgroundWithId("KZKxYp9aWz") {
+            (toptumblertext: PFObject!, error: NSError!) -> Void in
+            if error == nil && toptumblertext != nil {
+                
+                println(toptumblertext["toptumblertext"] as String)
+                self.topTumblerText = toptumblertext["toptumblertext"] as String
+                println(self.topTumblerText)
+                self.topTumblerTextView.text = String(self.topTumblerText)
+            } else {
+                println(error)
+            }
+        }
 
 
+    }
 
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
