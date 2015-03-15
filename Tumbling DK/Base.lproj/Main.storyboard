@@ -133,6 +133,25 @@
                                 <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
+                            <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" showsHorizontalScrollIndicator="NO" translatesAutoresizingMaskIntoConstraints="NO" id="uSj-fb-Snd">
+                                <rect key="frame" x="0.0" y="63" width="414" height="671"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" misplaced="YES" lineBreakMode="tailTruncation" numberOfLines="100" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="uwV-bV-UkR">
+                                        <rect key="frame" x="17" y="8" width="382" height="82"/>
+                                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="382" id="jQC-Jn-Koy"/>
+                                        </constraints>
+                                        <string key="text">hejhejhejhejhejhejhejhejhejhejhejhejhejhejhejhejhejhejhejhejhejhejhejhejhejhejhejhejhejhejhejhejhejhejhejhejhejhejhejhejhejhejhejhejhejhejhejhejhejhejhejhejhejhejhejhejhejhejhejhej</string>
+                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                                <constraints>
+                                    <constraint firstItem="uwV-bV-UkR" firstAttribute="leading" secondItem="uSj-fb-Snd" secondAttribute="leading" constant="8" id="IDb-1u-Yj2"/>
+                                    <constraint firstItem="uwV-bV-UkR" firstAttribute="top" secondItem="uSj-fb-Snd" secondAttribute="top" constant="8" id="dh1-yS-RL4"/>
+                                </constraints>
+                            </scrollView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
@@ -141,10 +160,14 @@
                         </constraints>
                     </view>
                     <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina55"/>
+                    <connections>
+                        <outlet property="newsLabel" destination="uwV-bV-UkR" id="XS8-cc-bwO"/>
+                        <outlet property="scroller" destination="uSj-fb-Snd" id="Oz5-J3-kme"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="vnh-yL-enG" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="452" y="-522"/>
+            <point key="canvasLocation" x="64" y="-536"/>
         </scene>
         <!--Top Tumblers Screen-->
         <scene sceneID="ktn-2d-e5e">
@@ -410,6 +433,6 @@
         <simulatedScreenMetrics key="destination" type="retina4"/>
     </simulatedMetricsContainer>
     <inferredMetricsTieBreakers>
-        <segue reference="XV8-9c-1fd"/>
+        <segue reference="1pl-Uz-Vg9"/>
     </inferredMetricsTieBreakers>
 </document>
