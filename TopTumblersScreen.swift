@@ -8,6 +8,7 @@
 
 import UIKit
 
+
 class TopTumblersScreen: UIViewController {
     @IBOutlet weak var topTumblerImage: UIImageView!
     @IBOutlet weak var topTumblerTextView: UITextView!
@@ -15,14 +16,43 @@ class TopTumblersScreen: UIViewController {
     
     var topTumblerTitle = ""
     var topTumblerText = ""
-    var toptumblerPersonImage: UIImage?
+    var topTumblerImageUrlPath = ""
+    var topTumblerPersonImage = UIImage(named: "")
 
     override func viewDidLoad() {
         super.viewDidLoad()
 
         //users can't edit the twxt
         topTumblerTextView.editable = false
+   
         
+        //creating a query which retrive the url string from parse for the profile image
+        var queryurl = PFQuery(className:"TopTumbler")
+        queryurl.getObjectInBackgroundWithId("KZKxYp9aWz") {
+            (toptumblerurlimagepath: PFObject!, error: NSError!) -> Void in
+            if error == nil && toptumblerurlimagepath != nil {
+                
+                println(toptumblerurlimagepath["toptumblerurlimagepath"] as String)
+                self.topTumblerImageUrlPath = toptumblerurlimagepath["toptumblerurlimagepath"] as String
+                println(self.topTumblerImageUrlPath)
+              
+                
+            } else {
+                println(error)
+            }
+        }
+        
+        
+        
+        
+        let url = NSURL(string: "http://files.parsetfss.com/e2383a7f-8dfb-4899-99c7-3637243bd0ac/tfss-d91fed70-e5be-4729-af93-324c4e6ef19e-Untitled%202.png")
+        let data = NSData(contentsOfURL: url!) //make sure your image in this url does exist, otherwise unwrap in a if let check
+        topTumblerImage.image = UIImage(data: data!)!
+
+        
+        
+        
+
         
         //creating a query which retrive the title string from parse
         var query = PFQuery(className:"TopTumbler")

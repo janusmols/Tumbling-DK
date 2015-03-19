@@ -23,6 +23,7 @@ class CalenderScreen: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        
         //retrive the url for the calender
         var query = PFQuery(className:"URLPath")
         query.getObjectInBackgroundWithId("fd1nxMUxys") {
