@@ -12,8 +12,7 @@ class VideoScreen: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
-
-        // Do any additional setup after loading the view.
+        UIApplication.sharedApplication().openURL(NSURL(string:"https://www.youtube.com/watch?v=IuGoU5WV0D8")!)
     }
 
     override func didReceiveMemoryWarning() {

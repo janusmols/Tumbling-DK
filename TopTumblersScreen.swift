@@ -25,6 +25,7 @@ class TopTumblersScreen: UIViewController {
 
         //users can't edit the twxt
         topTumblerTextView.editable = false
+
    
         
         //creating a query which retrive the url string from parse for the profile image
@@ -34,14 +35,13 @@ class TopTumblersScreen: UIViewController {
             if error == nil && toptumblerurlimagepath != nil {
                 self.topTumblerImageUrlPath = toptumblerurlimagepath["toptumblerurlimagepath"] as String
                 println(self.topTumblerImageUrlPath)
-                
-                let url = NSURL(string: "http://files.parsetfss.com/e2383a7f-8dfb-4899-99c7-3637243bd0ac/tfss-d91fed70-e5be-4729-af93-324c4e6ef19e-Untitled%202.png")
-                
-                let urll = NSURL(string: self.topTumblerImageUrlPath)
-                
-                let data = NSData(contentsOfURL: urll!)
-                sleep(2)
-                if let data = NSData(contentsOfURL: urll!){
+                //create variable "urll" which is equals to our retrieved imagelink string from parse
+                let url = NSURL(string: self.topTumblerImageUrlPath)
+                //get the image from the url
+                let data = NSData(contentsOfURL: url!)
+                //check that the image is downloaded
+                if let data = NSData(contentsOfURL: url!){
+                    //our profile image is equal to our image from parse via link
                     self.topTumblerImage.image = UIImage(data: data)
                     
                 }
@@ -76,6 +76,8 @@ class TopTumblersScreen: UIViewController {
             if error == nil && toptumblertext != nil {
                 self.topTumblerText = toptumblertext["toptumblertext"] as String
                 self.topTumblerTextView.text = String(self.topTumblerText)
+                //set the backgroundcolor of the text view
+                self.topTumblerTextView.backgroundColor = UIColor .lightTextColor()
             } else {
                 println(error)
             }
