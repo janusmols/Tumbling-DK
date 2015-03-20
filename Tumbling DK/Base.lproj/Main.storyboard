@@ -17,12 +17,14 @@
                         <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="83" sectionHeaderHeight="22" sectionFooterHeight="22" translatesAutoresizingMaskIntoConstraints="NO" id="hey-tt-DfT">
-                                <rect key="frame" x="-4" y="90" width="422" height="646"/>
-                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                                <color key="separatorColor" cocoaTouchSystemColor="tableCellGroupedBackgroundColor"/>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" image="vmtramptumb2014-foto-fig-13.jpg" translatesAutoresizingMaskIntoConstraints="NO" id="l1k-JI-iFR">
+                                <rect key="frame" x="87" y="304" width="240" height="128"/>
+                            </imageView>
+                            <tableView clipsSubviews="YES" alpha="0.69999999999999973" contentMode="scaleToFill" bounces="NO" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="83" sectionHeaderHeight="22" sectionFooterHeight="22" translatesAutoresizingMaskIntoConstraints="NO" id="hey-tt-DfT">
+                                <rect key="frame" x="-4" y="87" width="422" height="649"/>
+                                <color key="backgroundColor" cocoaTouchSystemColor="lightTextColor"/>
                                 <prototypes>
-                                    <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="Cell" rowHeight="115" id="mlC-zx-OKS" customClass="CustomCell" customModule="Tumbling_DK" customModuleProvider="target">
+                                    <tableViewCell alpha="0.69999999999999973" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="Cell" rowHeight="115" id="mlC-zx-OKS" customClass="CustomCell" customModule="Tumbling_DK" customModuleProvider="target">
                                         <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="mlC-zx-OKS" id="ZGt-1D-Wic">
@@ -62,17 +64,18 @@
                                 </connections>
                             </tableView>
                             <toolbar opaque="NO" clearsContextBeforeDrawing="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="pL6-NK-pPb">
-                                <rect key="frame" x="0.0" y="0.0" width="414" height="80"/>
-                                <color key="backgroundColor" cocoaTouchSystemColor="groupTableViewBackgroundColor"/>
+                                <rect key="frame" x="0.0" y="0.0" width="414" height="87"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <constraints>
-                                    <constraint firstAttribute="height" constant="80" id="L6d-Qr-b8X"/>
+                                    <constraint firstAttribute="height" constant="87" id="L6d-Qr-b8X"/>
                                 </constraints>
                                 <items/>
-                                <color key="tintColor" cocoaTouchSystemColor="groupTableViewBackgroundColor"/>
-                                <color key="barTintColor" cocoaTouchSystemColor="lightTextColor"/>
+                                <color key="tintColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <color key="barTintColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                             </toolbar>
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="GymDanmarkTumbling.png" translatesAutoresizingMaskIntoConstraints="NO" id="4G4-NR-rA5">
                                 <rect key="frame" x="57" y="25" width="300" height="60"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="300" id="6go-OP-6Yt"/>
                                     <constraint firstAttribute="height" constant="60" id="wQo-n2-iU9"/>
@@ -81,15 +84,19 @@
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
-                            <constraint firstItem="hey-tt-DfT" firstAttribute="top" secondItem="pL6-NK-pPb" secondAttribute="bottom" constant="10" id="7I2-2W-rqi"/>
+                            <constraint firstItem="hey-tt-DfT" firstAttribute="top" secondItem="pL6-NK-pPb" secondAttribute="bottom" id="7I2-2W-rqi"/>
+                            <constraint firstItem="l1k-JI-iFR" firstAttribute="leading" secondItem="bqD-1S-6Fg" secondAttribute="leadingMargin" constant="-16" id="99j-4J-zII"/>
                             <constraint firstItem="pL6-NK-pPb" firstAttribute="top" secondItem="bqD-1S-6Fg" secondAttribute="topMargin" id="Ab7-OG-jbX"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="l1k-JI-iFR" secondAttribute="trailing" constant="-16" id="Aea-VF-lob"/>
                             <constraint firstItem="iwe-kg-ydX" firstAttribute="top" secondItem="hey-tt-DfT" secondAttribute="bottom" id="DAU-tM-0kV"/>
+                            <constraint firstItem="4G4-NR-rA5" firstAttribute="top" secondItem="pL6-NK-pPb" secondAttribute="bottom" constant="-62" id="GQo-gG-02D"/>
                             <constraint firstAttribute="trailingMargin" secondItem="pL6-NK-pPb" secondAttribute="trailing" constant="-16" id="Jlx-3V-8QL"/>
                             <constraint firstItem="4G4-NR-rA5" firstAttribute="leading" secondItem="bqD-1S-6Fg" secondAttribute="leadingMargin" constant="41" id="OoK-wf-BzH"/>
                             <constraint firstItem="pL6-NK-pPb" firstAttribute="leading" secondItem="bqD-1S-6Fg" secondAttribute="leadingMargin" constant="-16" id="RcD-n1-MUM"/>
+                            <constraint firstAttribute="bottomMargin" secondItem="l1k-JI-iFR" secondAttribute="bottom" id="VAs-FN-hxN"/>
+                            <constraint firstItem="l1k-JI-iFR" firstAttribute="top" secondItem="pL6-NK-pPb" secondAttribute="bottom" id="WoG-FR-oF7"/>
                             <constraint firstItem="hey-tt-DfT" firstAttribute="leading" secondItem="bqD-1S-6Fg" secondAttribute="leadingMargin" constant="-20" id="mHn-6a-43T"/>
                             <constraint firstAttribute="trailingMargin" secondItem="hey-tt-DfT" secondAttribute="trailing" constant="-20" id="qpX-VY-0EL"/>
-                            <constraint firstItem="4G4-NR-rA5" firstAttribute="top" secondItem="MgQ-io-utK" secondAttribute="bottom" constant="5" id="qy9-n4-L6s"/>
                             <constraint firstAttribute="trailingMargin" secondItem="4G4-NR-rA5" secondAttribute="trailing" constant="41" id="tSv-AF-beX"/>
                         </constraints>
                     </view>
@@ -180,6 +187,9 @@
                         <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="vmtramptumb2014-foto-fig-13.jpg" translatesAutoresizingMaskIntoConstraints="NO" id="TwL-Zc-bLR">
+                                <rect key="frame" x="0.0" y="64" width="414" height="672"/>
+                            </imageView>
                             <toolbar opaque="NO" clearsContextBeforeDrawing="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="0l5-FA-XIi">
                                 <rect key="frame" x="0.0" y="20" width="414" height="44"/>
                                 <color key="backgroundColor" cocoaTouchSystemColor="tableCellGroupedBackgroundColor"/>
@@ -200,16 +210,15 @@
                                 <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="images-4.jpeg" translatesAutoresizingMaskIntoConstraints="NO" id="fTo-lZ-4Qw">
-                                <rect key="frame" x="127" y="74" width="160" height="240"/>
-                            </imageView>
-                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="MCo-PH-kTz">
-                                <rect key="frame" x="16" y="330" width="382" height="398"/>
-                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="fTo-lZ-4Qw"/>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="MCo-PH-kTz">
+                                <rect key="frame" x="16" y="90" width="382" height="594"/>
+                                <color key="backgroundColor" cocoaTouchSystemColor="lightTextColor"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="14"/>
                                 <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
                             </textView>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="lim-GC-DfN">
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" misplaced="YES" text="" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="lim-GC-DfN">
                                 <fontDescription key="fontDescription" name="Chalkduster" family="Chalkduster" pointSize="17"/>
                                 <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                                 <nil key="highlightedColor"/>
@@ -217,16 +226,20 @@
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
+                            <constraint firstItem="TwL-Zc-bLR" firstAttribute="top" secondItem="MAh-1e-9wz" secondAttribute="bottom" constant="44" id="3K7-y1-ol9"/>
                             <constraint firstItem="lim-GC-DfN" firstAttribute="top" secondItem="fTo-lZ-4Qw" secondAttribute="bottom" constant="8" id="3fN-Eu-jQA"/>
+                            <constraint firstAttribute="bottomMargin" secondItem="TwL-Zc-bLR" secondAttribute="bottom" id="3ne-FY-dSD"/>
                             <constraint firstItem="MCo-PH-kTz" firstAttribute="leading" secondItem="a0y-7G-oqT" secondAttribute="leadingMargin" id="48D-gQ-zUB"/>
                             <constraint firstItem="MCo-PH-kTz" firstAttribute="top" secondItem="lim-GC-DfN" secondAttribute="bottom" constant="8" id="8Xy-Hn-fRr"/>
                             <constraint firstItem="MCo-PH-kTz" firstAttribute="trailing" secondItem="a0y-7G-oqT" secondAttribute="trailingMargin" id="RfM-Fg-5Yp"/>
                             <constraint firstAttribute="trailingMargin" secondItem="0l5-FA-XIi" secondAttribute="trailing" constant="-16" id="RkC-o7-DuZ"/>
                             <constraint firstItem="hHY-OF-N1D" firstAttribute="centerY" secondItem="0l5-FA-XIi" secondAttribute="centerY" id="Tyz-yh-UNf"/>
                             <constraint firstAttribute="centerX" secondItem="hHY-OF-N1D" secondAttribute="centerX" constant="-0.5" id="VLP-qH-30c"/>
+                            <constraint firstItem="TwL-Zc-bLR" firstAttribute="leading" secondItem="a0y-7G-oqT" secondAttribute="leadingMargin" constant="-16" id="Yfh-U9-PsS"/>
                             <constraint firstItem="0l5-FA-XIi" firstAttribute="top" secondItem="MAh-1e-9wz" secondAttribute="bottom" id="aBc-H1-nMa"/>
                             <constraint firstAttribute="centerX" secondItem="lim-GC-DfN" secondAttribute="centerX" id="gsG-iT-CJl"/>
                             <constraint firstAttribute="centerX" secondItem="fTo-lZ-4Qw" secondAttribute="centerX" id="hl8-Kk-yIa"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="TwL-Zc-bLR" secondAttribute="trailing" constant="-16" id="kGA-YR-Ok7"/>
                             <constraint firstItem="EYI-ky-2bb" firstAttribute="top" secondItem="MCo-PH-kTz" secondAttribute="bottom" constant="8" id="ohu-7T-oG0"/>
                             <constraint firstItem="0l5-FA-XIi" firstAttribute="leading" secondItem="a0y-7G-oqT" secondAttribute="leadingMargin" constant="-16" id="s1A-Ua-RIE"/>
                             <constraint firstItem="fTo-lZ-4Qw" firstAttribute="top" secondItem="MAh-1e-9wz" secondAttribute="bottom" constant="54" id="wTF-og-NbJ"/>
@@ -243,7 +256,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dex-dv-6EV" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="469" y="270"/>
+            <point key="canvasLocation" x="469" y="292"/>
         </scene>
         <!--Calender Screen-->
         <scene sceneID="2kF-I9-vIq">
@@ -456,8 +469,8 @@
     </scenes>
     <resources>
         <image name="GymDanmarkTumbling.png" width="3449" height="1023"/>
-        <image name="images-4.jpeg" width="160" height="240"/>
         <image name="tumblingimg.png" width="1140" height="340"/>
+        <image name="vmtramptumb2014-foto-fig-13.jpg" width="362" height="578"/>
     </resources>
     <simulatedMetricsContainer key="defaultSimulatedMetrics">
         <simulatedStatusBarMetrics key="statusBar"/>
@@ -465,6 +478,6 @@
         <simulatedScreenMetrics key="destination" type="retina4"/>
     </simulatedMetricsContainer>
     <inferredMetricsTieBreakers>
-        <segue reference="R1V-7Q-fxx"/>
+        <segue reference="Y7D-gL-3me"/>
     </inferredMetricsTieBreakers>
 </document>

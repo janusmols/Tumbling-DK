@@ -19,6 +19,7 @@ class TopTumblersScreen: UIViewController {
     var topTumblerImageUrlPath = ""
     var topTumblerPersonImage = UIImage(named: "")
 
+    
     override func viewDidLoad() {
         super.viewDidLoad()
 
@@ -31,11 +32,20 @@ class TopTumblersScreen: UIViewController {
         queryurl.getObjectInBackgroundWithId("KZKxYp9aWz") {
             (toptumblerurlimagepath: PFObject!, error: NSError!) -> Void in
             if error == nil && toptumblerurlimagepath != nil {
-                
-                println(toptumblerurlimagepath["toptumblerurlimagepath"] as String)
                 self.topTumblerImageUrlPath = toptumblerurlimagepath["toptumblerurlimagepath"] as String
                 println(self.topTumblerImageUrlPath)
-              
+                
+                let url = NSURL(string: "http://files.parsetfss.com/e2383a7f-8dfb-4899-99c7-3637243bd0ac/tfss-d91fed70-e5be-4729-af93-324c4e6ef19e-Untitled%202.png")
+                
+                let urll = NSURL(string: self.topTumblerImageUrlPath)
+                
+                let data = NSData(contentsOfURL: urll!)
+                sleep(2)
+                if let data = NSData(contentsOfURL: urll!){
+                    self.topTumblerImage.image = UIImage(data: data)
+                    
+                }
+
                 
             } else {
                 println(error)
@@ -43,26 +53,16 @@ class TopTumblersScreen: UIViewController {
         }
         
         
-        
-        
-        let url = NSURL(string: "http://files.parsetfss.com/e2383a7f-8dfb-4899-99c7-3637243bd0ac/tfss-d91fed70-e5be-4729-af93-324c4e6ef19e-Untitled%202.png")
-        let data = NSData(contentsOfURL: url!) //make sure your image in this url does exist, otherwise unwrap in a if let check
-        topTumblerImage.image = UIImage(data: data!)!
 
         
         
-        
-
         
         //creating a query which retrive the title string from parse
         var query = PFQuery(className:"TopTumbler")
         query.getObjectInBackgroundWithId("KZKxYp9aWz") {
             (toptumblertitle: PFObject!, error: NSError!) -> Void in
             if error == nil && toptumblertitle != nil {
-                
-                println(toptumblertitle["toptumblertitle"] as String)
                 self.topTumblerTitle = toptumblertitle["toptumblertitle"] as String
-                println(self.topTumblerTitle)
                 self.topTumblerTitleLabel.text = String(self.topTumblerTitle)
             } else {
                 println(error)
@@ -74,10 +74,7 @@ class TopTumblersScreen: UIViewController {
         querytext.getObjectInBackgroundWithId("KZKxYp9aWz") {
             (toptumblertext: PFObject!, error: NSError!) -> Void in
             if error == nil && toptumblertext != nil {
-                
-                println(toptumblertext["toptumblertext"] as String)
                 self.topTumblerText = toptumblertext["toptumblertext"] as String
-                println(self.topTumblerText)
                 self.topTumblerTextView.text = String(self.topTumblerText)
             } else {
                 println(error)

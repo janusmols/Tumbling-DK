@@ -25,6 +25,7 @@
 		613E68261AB4C0D8007C21DB /* CalenderScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = 613E68251AB4C0D8007C21DB /* CalenderScreen.swift */; };
 		613E68281AB50F67007C21DB /* tumblingimg.png in Resources */ = {isa = PBXBuildFile; fileRef = 613E68271AB50F67007C21DB /* tumblingimg.png */; };
 		613E682A1AB615F5007C21DB /* images-4.jpeg in Resources */ = {isa = PBXBuildFile; fileRef = 613E68291AB615F5007C21DB /* images-4.jpeg */; };
+		616951321ABC49E4009E89A4 /* vmtramptumb2014-foto-fig-13.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 616951311ABC49E4009E89A4 /* vmtramptumb2014-foto-fig-13.jpg */; };
 		61CF0FA11AA8C1300040FCE9 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 61CF0FA01AA8C1300040FCE9 /* AppDelegate.swift */; };
 		61CF0FA41AA8C1300040FCE9 /* Tumbling_DK.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 61CF0FA21AA8C1300040FCE9 /* Tumbling_DK.xcdatamodeld */; };
 		61CF0FAB1AA8C1300040FCE9 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 61CF0FAA1AA8C1300040FCE9 /* Images.xcassets */; };
@@ -78,6 +79,7 @@
 		613E68251AB4C0D8007C21DB /* CalenderScreen.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = CalenderScreen.swift; path = ../CalenderScreen.swift; sourceTree = "<group>"; };
 		613E68271AB50F67007C21DB /* tumblingimg.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = tumblingimg.png; sourceTree = "<group>"; };
 		613E68291AB615F5007C21DB /* images-4.jpeg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "images-4.jpeg"; sourceTree = "<group>"; };
+		616951311ABC49E4009E89A4 /* vmtramptumb2014-foto-fig-13.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "vmtramptumb2014-foto-fig-13.jpg"; sourceTree = "<group>"; };
 		61CF0F9B1AA8C1300040FCE9 /* Tumbling DK.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Tumbling DK.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		61CF0F9F1AA8C1300040FCE9 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		61CF0FA01AA8C1300040FCE9 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -197,6 +199,7 @@
 				613E68171AB4A639007C21DB /* GymDanmarkTumbling.png */,
 				613E68271AB50F67007C21DB /* tumblingimg.png */,
 				613E68291AB615F5007C21DB /* images-4.jpeg */,
+				616951311ABC49E4009E89A4 /* vmtramptumb2014-foto-fig-13.jpg */,
 				61CF0F9F1AA8C1300040FCE9 /* Info.plist */,
 			);
 			name = "Supporting Files";
@@ -330,6 +333,7 @@
 				613E68121AB394E3007C21DB /* img3.png in Resources */,
 				613E68141AB39554007C21DB /* img4.png in Resources */,
 				613E68181AB4A639007C21DB /* GymDanmarkTumbling.png in Resources */,
+				616951321ABC49E4009E89A4 /* vmtramptumb2014-foto-fig-13.jpg in Resources */,
 				613E67F51AB07E3B007C21DB /* menu-24.png in Resources */,
 				613E68281AB50F67007C21DB /* tumblingimg.png in Resources */,
 				61CF0FAB1AA8C1300040FCE9 /* Images.xcassets in Resources */,

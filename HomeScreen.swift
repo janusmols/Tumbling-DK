@@ -53,8 +53,6 @@ class ViewController: UIViewController, UITableViewDataSource, UITableViewDelega
     func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath) -> UITableViewCell {
         //initialize the cell
         let cell: CustomCell = tableView.dequeueReusableCellWithIdentifier("Cell") as CustomCell
-        //Set the backgroundcolor of the cells
-        cell.backgroundColor = UIColor.groupTableViewBackgroundColor()
 
         let categories = arrayOfCategories[indexPath.row]
         
