@@ -31,10 +31,12 @@ class VideoScreen: UIViewController, UITableViewDataSource, UITableViewDelegate 
 
 func setUpVideos(){
     //set up the the titles for the tableview
-var video1 = Videos(videoURL: "https://www.google.dk")
+    var video1 = Videos(videoURL: "https://www.youtube.com/watch?v=OvSf6kk07uE")
+    var video2 = Videos(videoURL: "https://www.youtube.com/watch?v=fcLQPQ02VwE")
     
     //connect the videos to the videoarray
     arrayOfVideos.append(video1)
+    arrayOfVideos.append(video2)
 }
 
 func tableView(tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
@@ -61,7 +63,7 @@ func tableView(tableView: UITableView, didSelectRowAtIndexPath indexPath: NSInde
     switch(indexPath.row){
         
     case 0:
-        
+
         break
         
     default:
@@ -76,3 +78,4 @@ func tableView(tableView: UITableView, didSelectRowAtIndexPath indexPath: NSInde
 }
     
 }
+
