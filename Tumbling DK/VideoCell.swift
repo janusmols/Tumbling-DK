@@ -9,5 +9,27 @@
 import UIKit
 
 class VideoCell: UITableViewCell {
-
+    
+    @IBOutlet weak var webView: UIWebView!
+    
+    override func awakeFromNib() {
+        super.awakeFromNib()
+        // Initialization code
+    }
+    
+    override func setSelected(selected: Bool, animated: Bool) {
+        super.setSelected(selected, animated: animated)
+        
+        // Configure the view for the selected state
+    }
+    
+    func setCell(videoURL: String){
+        //set up the webview
+        let requestURL = NSURL(string: videoURL)
+        let request = NSURLRequest(URL:requestURL!)
+        self.webView.loadRequest(request)
+    }
+    
 }
+
+

@@ -154,7 +154,6 @@
 				613E67FA1AB31F85007C21DB /* CustomCell.swift */,
 				613E67FE1AB32170007C21DB /* Category.swift */,
 				613E67FC1AB320AD007C21DB /* HomeScreen.swift */,
-				616951341ABC6331009E89A4 /* VideoScreen */,
 			);
 			name = HomeScreen;
 			sourceTree = "<group>";
@@ -162,9 +161,9 @@
 		616951341ABC6331009E89A4 /* VideoScreen */ = {
 			isa = PBXGroup;
 			children = (
-				613E68231AB4C0BB007C21DB /* VideoScreen.swift */,
-				616951351ABC6377009E89A4 /* Videos.swift */,
 				616951371ABC63AB009E89A4 /* VideoCell.swift */,
+				616951351ABC6377009E89A4 /* Videos.swift */,
+				613E68231AB4C0BB007C21DB /* VideoScreen.swift */,
 			);
 			name = VideoScreen;
 			sourceTree = "<group>";
@@ -194,6 +193,7 @@
 			children = (
 				616951331ABC62F6009E89A4 /* HomeScreen */,
 				61CF0FE81AA8E5790040FCE9 /* MyPlaygroundparse.playground */,
+				616951341ABC6331009E89A4 /* VideoScreen */,
 				61CF0FA01AA8C1300040FCE9 /* AppDelegate.swift */,
 				61CF0FE91AA8E6380040FCE9 /* view.swift */,
 				613E68041AB32C82007C21DB /* NewsScreen.swift */,

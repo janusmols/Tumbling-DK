@@ -7,3 +7,16 @@
 //
 
 import Foundation
+
+
+class Videos {
+    //set up the url for the videos
+    var videoURL = "blank"
+    
+    init(videoURL: String){
+        
+       self.videoURL = videoURL
+        
+    }
+    
+}
