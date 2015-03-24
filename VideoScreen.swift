@@ -16,7 +16,6 @@ class VideoScreen: UIViewController, UITableViewDataSource, UITableViewDelegate 
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        
         //call the setUpvideos func
         self.setUpVideos()
     }
@@ -30,17 +29,19 @@ class VideoScreen: UIViewController, UITableViewDataSource, UITableViewDelegate 
 
 
 func setUpVideos(){
-    //set up the the titles for the tableview
+
+    //set up the the different youtube videos for the tableview
     var video1 = Videos(videoURL: "https://www.youtube.com/watch?v=OvSf6kk07uE")
     var video2 = Videos(videoURL: "https://www.youtube.com/watch?v=fcLQPQ02VwE")
-    
+    var video3 = Videos(videoURL: "https://www.youtube.com/watch?v=T-SAHgs7IEY")
     //connect the videos to the videoarray
     arrayOfVideos.append(video1)
     arrayOfVideos.append(video2)
+    arrayOfVideos.append(video3)
 }
 
 func tableView(tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-    //numbers of titles in the array is equal to the rows in the tableview
+    //numbers of videos in the array is equal to the rows in the tableview
     return arrayOfVideos.count
 }
 
@@ -55,27 +56,6 @@ func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexP
     return cell
 }
 
-func tableView(tableView: UITableView, didSelectRowAtIndexPath indexPath: NSIndexPath) {
-    
-    let categoriesrow = arrayOfVideos[indexPath.row]
-    
-    //The category you choose would send you to its own View
-    switch(indexPath.row){
-        
-    case 0:
-
-        break
-        
-    default:
-        break
-        
-        
-        
-        
-    }
-
-    
-}
     
 }
 

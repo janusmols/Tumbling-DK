@@ -18,7 +18,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="vmtramptumb2014-foto-fig-13.jpg" translatesAutoresizingMaskIntoConstraints="NO" id="l1k-JI-iFR">
-                                <rect key="frame" x="0.0" y="87" width="414" height="649"/>
+                                <rect key="frame" x="-4" y="87" width="422" height="649"/>
                             </imageView>
                             <toolbar opaque="NO" clearsContextBeforeDrawing="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="pL6-NK-pPb">
                                 <rect key="frame" x="0.0" y="0.0" width="414" height="87"/>
@@ -38,9 +38,11 @@
                                     <constraint firstAttribute="height" constant="60" id="wQo-n2-iU9"/>
                                 </constraints>
                             </imageView>
-                            <tableView clipsSubviews="YES" alpha="0.59999999999999964" contentMode="scaleToFill" bounces="NO" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="83" sectionHeaderHeight="22" sectionFooterHeight="22" translatesAutoresizingMaskIntoConstraints="NO" id="hey-tt-DfT">
+                            <tableView clipsSubviews="YES" alpha="0.69999999999999973" contentMode="scaleToFill" bounces="NO" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="83" sectionHeaderHeight="22" sectionFooterHeight="22" translatesAutoresizingMaskIntoConstraints="NO" id="hey-tt-DfT">
                                 <rect key="frame" x="-4" y="87" width="422" height="649"/>
-                                <color key="backgroundColor" cocoaTouchSystemColor="lightTextColor"/>
+                                <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
+                                <color key="separatorColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
+                                <color key="sectionIndexBackgroundColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
                                 <prototypes>
                                     <tableViewCell alpha="0.69999999999999973" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="Cell" rowHeight="115" id="mlC-zx-OKS" customClass="CustomCell" customModule="Tumbling_DK" customModuleProvider="target">
                                         <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
@@ -58,20 +60,17 @@
                                                     <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
-                                                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="14x-AN-cv6">
-                                                    <constraints>
-                                                        <constraint firstAttribute="width" id="W4s-GD-E5F"/>
-                                                    </constraints>
-                                                </imageView>
+                                                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" translatesAutoresizingMaskIntoConstraints="NO" id="14x-AN-cv6"/>
                                             </subviews>
+                                            <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
                                             <constraints>
-                                                <constraint firstItem="14x-AN-cv6" firstAttribute="top" secondItem="ZGt-1D-Wic" secondAttribute="topMargin" constant="55" id="1fL-rx-Z5I"/>
                                                 <constraint firstAttribute="centerY" secondItem="MCU-FR-y5g" secondAttribute="centerY" constant="-6" id="7sa-qL-Drf"/>
                                                 <constraint firstAttribute="trailingMargin" secondItem="14x-AN-cv6" secondAttribute="trailing" constant="28" id="d6U-4v-n9R"/>
                                                 <constraint firstAttribute="centerX" secondItem="MCU-FR-y5g" secondAttribute="centerX" id="iTS-Dn-ZqT"/>
                                                 <constraint firstItem="MCU-FR-y5g" firstAttribute="centerY" secondItem="14x-AN-cv6" secondAttribute="centerY" constant="0.5" id="ieF-KR-8UY"/>
                                             </constraints>
                                         </tableViewCellContentView>
+                                        <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
                                         <connections>
                                             <outlet property="imageOut" destination="14x-AN-cv6" id="BxG-kI-4uf"/>
                                             <outlet property="titleLabel" destination="MCU-FR-y5g" id="ktK-z2-Kam"/>
@@ -88,9 +87,9 @@
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
                             <constraint firstItem="hey-tt-DfT" firstAttribute="top" secondItem="pL6-NK-pPb" secondAttribute="bottom" id="7I2-2W-rqi"/>
-                            <constraint firstItem="l1k-JI-iFR" firstAttribute="leading" secondItem="bqD-1S-6Fg" secondAttribute="leadingMargin" constant="-16" id="99j-4J-zII"/>
+                            <constraint firstItem="l1k-JI-iFR" firstAttribute="leading" secondItem="bqD-1S-6Fg" secondAttribute="leadingMargin" constant="-20" id="99j-4J-zII"/>
                             <constraint firstItem="pL6-NK-pPb" firstAttribute="top" secondItem="bqD-1S-6Fg" secondAttribute="topMargin" id="Ab7-OG-jbX"/>
-                            <constraint firstAttribute="trailingMargin" secondItem="l1k-JI-iFR" secondAttribute="trailing" constant="-16" id="Aea-VF-lob"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="l1k-JI-iFR" secondAttribute="trailing" constant="-20" id="Aea-VF-lob"/>
                             <constraint firstItem="iwe-kg-ydX" firstAttribute="top" secondItem="hey-tt-DfT" secondAttribute="bottom" id="DAU-tM-0kV"/>
                             <constraint firstItem="4G4-NR-rA5" firstAttribute="top" secondItem="pL6-NK-pPb" secondAttribute="bottom" constant="-62" id="GQo-gG-02D"/>
                             <constraint firstAttribute="trailingMargin" secondItem="pL6-NK-pPb" secondAttribute="trailing" constant="-16" id="Jlx-3V-8QL"/>
@@ -294,7 +293,6 @@
                             <toolbar opaque="NO" clearsContextBeforeDrawing="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="HIu-d1-oby">
                                 <rect key="frame" x="0.0" y="692" width="414" height="44"/>
                                 <items>
-                                    <barButtonItem style="plain" systemItem="flexibleSpace" id="mKs-h9-1Aq"/>
                                     <barButtonItem title="Tilbage" id="Bgx-84-fdN">
                                         <connections>
                                             <action selector="goBack" destination="I89-qb-W3v" id="CFa-CF-ZvR"/>
@@ -306,7 +304,16 @@
                                             <action selector="goForward" destination="I89-qb-W3v" id="a4N-6o-7MF"/>
                                         </connections>
                                     </barButtonItem>
+                                    <barButtonItem style="plain" systemItem="flexibleSpace" id="Y8m-Wy-L7r"/>
                                     <barButtonItem style="plain" systemItem="flexibleSpace" id="den-3X-GcL"/>
+                                    <barButtonItem style="plain" systemItem="flexibleSpace" id="126-6S-2I2"/>
+                                    <barButtonItem style="plain" systemItem="flexibleSpace" id="GfG-zy-QNs"/>
+                                    <barButtonItem style="plain" systemItem="flexibleSpace" id="8li-Ie-rZI"/>
+                                    <barButtonItem systemItem="refresh" id="dOp-Az-1Nq">
+                                        <connections>
+                                            <action selector="reload" destination="I89-qb-W3v" id="UgY-PH-373"/>
+                                        </connections>
+                                    </barButtonItem>
                                 </items>
                             </toolbar>
                             <webView contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="I89-qb-W3v">
@@ -415,18 +422,18 @@
                                 <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <tableView clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="250" sectionHeaderHeight="22" sectionFooterHeight="22" translatesAutoresizingMaskIntoConstraints="NO" id="CAC-GE-6rI">
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="270" sectionHeaderHeight="22" sectionFooterHeight="22" translatesAutoresizingMaskIntoConstraints="NO" id="CAC-GE-6rI">
                                 <rect key="frame" x="0.0" y="65" width="414" height="671"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <prototypes>
-                                    <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="Cell" rowHeight="250" id="HRj-uk-DlA" customClass="VideoCell" customModule="Tumbling_DK" customModuleProvider="target">
+                                    <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="Cell" rowHeight="270" id="HRj-uk-DlA" customClass="VideoCell" customModule="Tumbling_DK" customModuleProvider="target">
                                         <rect key="frame" x="0.0" y="0.0" width="414" height="44"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="HRj-uk-DlA" id="gve-V1-0Hw">
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
-                                                <webView contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="RTc-wl-qqb">
-                                                    <rect key="frame" x="0.0" y="0.0" width="414" height="249"/>
+                                                <webView contentMode="scaleToFill" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="RTc-wl-qqb">
+                                                    <rect key="frame" x="0.0" y="0.0" width="414" height="279"/>
                                                     <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                                 </webView>
                                             </subviews>
@@ -451,10 +458,14 @@
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
                             <constraint firstAttribute="centerX" secondItem="9ZH-fm-9k2" secondAttribute="centerX" constant="-0.5" id="32f-t5-yuO"/>
+                            <constraint firstItem="CAC-GE-6rI" firstAttribute="leading" secondItem="6ib-om-1Pu" secondAttribute="leadingMargin" constant="-16" id="GSE-hk-hWx"/>
                             <constraint firstItem="ikF-nI-iLL" firstAttribute="leading" secondItem="6ib-om-1Pu" secondAttribute="leadingMargin" constant="-16" id="IQF-53-vZp"/>
                             <constraint firstItem="9ZH-fm-9k2" firstAttribute="centerY" secondItem="ikF-nI-iLL" secondAttribute="centerY" id="VeI-SF-VLH"/>
+                            <constraint firstItem="CAC-GE-6rI" firstAttribute="bottom" secondItem="6ib-om-1Pu" secondAttribute="bottomMargin" id="hqM-Eu-NA0"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="CAC-GE-6rI" secondAttribute="trailing" constant="-16" id="kuc-CK-cv6"/>
                             <constraint firstItem="ikF-nI-iLL" firstAttribute="top" secondItem="tGl-pE-jqu" secondAttribute="bottom" id="ng2-rv-d2B"/>
                             <constraint firstAttribute="trailingMargin" secondItem="ikF-nI-iLL" secondAttribute="trailing" constant="-16" id="vk0-15-WQe"/>
+                            <constraint firstItem="CAC-GE-6rI" firstAttribute="top" secondItem="tGl-pE-jqu" secondAttribute="bottom" constant="45" id="z5c-XX-o7p"/>
                         </constraints>
                     </view>
                     <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina55"/>
@@ -502,7 +513,93 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="922" y="-1271"/>
+            <point key="canvasLocation" x="284" y="-1733"/>
+        </scene>
+        <!--Result Screen-->
+        <scene sceneID="rMr-Rt-DzJ">
+            <objects>
+                <viewController storyboardIdentifier="ResultScreen" id="N9f-7C-wGN" customClass="ResultScreen" customModule="Tumbling_DK" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="S8Z-yo-Xt1"/>
+                        <viewControllerLayoutGuide type="bottom" id="Li1-R3-KeN"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="5Wc-yQ-RRR">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <toolbar opaque="NO" clearsContextBeforeDrawing="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Yd6-ZE-xxA">
+                                <rect key="frame" x="0.0" y="20" width="414" height="44"/>
+                                <color key="backgroundColor" cocoaTouchSystemColor="tableCellGroupedBackgroundColor"/>
+                                <items>
+                                    <barButtonItem title="Back" style="plain" id="4to-OK-6yc">
+                                        <connections>
+                                            <segue destination="4ds-K4-Hbe" kind="modal" modalTransitionStyle="crossDissolve" id="0qn-w7-7xK"/>
+                                        </connections>
+                                    </barButtonItem>
+                                </items>
+                                <color key="barTintColor" white="0.84948087989999999" alpha="1" colorSpace="calibratedWhite"/>
+                            </toolbar>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Resultater" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="q7Q-DN-2N6">
+                                <rect key="frame" x="169" y="32" width="76" height="20"/>
+                                <fontDescription key="fontDescription" style="UICTFontTextStyleHeadline"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <webView contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="XRT-d6-qgK">
+                                <rect key="frame" x="0.0" y="64" width="414" height="628"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                            </webView>
+                            <toolbar opaque="NO" clearsContextBeforeDrawing="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="vjY-Z5-dlE">
+                                <rect key="frame" x="0.0" y="692" width="414" height="44"/>
+                                <items>
+                                    <barButtonItem title="Tilbage" id="EPh-iV-Ahu">
+                                        <connections>
+                                            <action selector="goBack" destination="XRT-d6-qgK" id="kgY-X2-Ghk"/>
+                                        </connections>
+                                    </barButtonItem>
+                                    <barButtonItem style="plain" systemItem="flexibleSpace" id="wb7-Qe-imB"/>
+                                    <barButtonItem title="Fremad" id="afC-6p-MWB">
+                                        <connections>
+                                            <action selector="goForward" destination="XRT-d6-qgK" id="En5-b8-lzB"/>
+                                        </connections>
+                                    </barButtonItem>
+                                    <barButtonItem style="plain" systemItem="flexibleSpace" id="RJV-GG-1Us"/>
+                                    <barButtonItem style="plain" systemItem="flexibleSpace" id="VO0-YR-2It"/>
+                                    <barButtonItem style="plain" systemItem="flexibleSpace" id="W14-oa-I48"/>
+                                    <barButtonItem style="plain" systemItem="flexibleSpace" id="WQp-aH-2tf"/>
+                                    <barButtonItem style="plain" systemItem="flexibleSpace" id="NxP-cP-c08"/>
+                                    <barButtonItem systemItem="refresh" id="1lR-bf-ucl">
+                                        <connections>
+                                            <action selector="reload" destination="XRT-d6-qgK" id="166-aH-xuB"/>
+                                        </connections>
+                                    </barButtonItem>
+                                </items>
+                            </toolbar>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstAttribute="trailingMargin" secondItem="vjY-Z5-dlE" secondAttribute="trailing" constant="-16" id="18D-tC-dUD"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="Yd6-ZE-xxA" secondAttribute="trailing" constant="-16" id="6XB-Px-ZQE"/>
+                            <constraint firstItem="vjY-Z5-dlE" firstAttribute="leading" secondItem="5Wc-yQ-RRR" secondAttribute="leadingMargin" constant="-16" id="7CM-ac-7Du"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="XRT-d6-qgK" secondAttribute="trailing" constant="-16" id="9ai-CX-yIY"/>
+                            <constraint firstItem="XRT-d6-qgK" firstAttribute="top" secondItem="Yd6-ZE-xxA" secondAttribute="bottom" id="9xp-9f-GRF"/>
+                            <constraint firstItem="q7Q-DN-2N6" firstAttribute="centerY" secondItem="Yd6-ZE-xxA" secondAttribute="centerY" id="F2b-ar-hst"/>
+                            <constraint firstItem="vjY-Z5-dlE" firstAttribute="top" secondItem="XRT-d6-qgK" secondAttribute="bottom" id="N90-sj-Yh0"/>
+                            <constraint firstItem="Li1-R3-KeN" firstAttribute="top" secondItem="vjY-Z5-dlE" secondAttribute="bottom" id="Wdi-lw-dJj"/>
+                            <constraint firstItem="XRT-d6-qgK" firstAttribute="leading" secondItem="5Wc-yQ-RRR" secondAttribute="leadingMargin" constant="-16" id="ZgC-lN-DXc"/>
+                            <constraint firstItem="Yd6-ZE-xxA" firstAttribute="leading" secondItem="5Wc-yQ-RRR" secondAttribute="leadingMargin" constant="-16" id="aAE-uN-SWH"/>
+                            <constraint firstItem="Yd6-ZE-xxA" firstAttribute="top" secondItem="S8Z-yo-Xt1" secondAttribute="bottom" id="kxi-ng-dSA"/>
+                            <constraint firstAttribute="centerX" secondItem="q7Q-DN-2N6" secondAttribute="centerX" id="vGR-U2-MS6"/>
+                        </constraints>
+                    </view>
+                    <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina55"/>
+                    <connections>
+                        <outlet property="webview" destination="XRT-d6-qgK" id="ify-gJ-NN1"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="hfE-jk-pz9" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="922" y="-1345"/>
         </scene>
     </scenes>
     <resources>
@@ -516,6 +613,6 @@
         <simulatedScreenMetrics key="destination" type="retina4"/>
     </simulatedMetricsContainer>
     <inferredMetricsTieBreakers>
-        <segue reference="5sd-D2-zPK"/>
+        <segue reference="0qn-w7-7xK"/>
     </inferredMetricsTieBreakers>
 </document>

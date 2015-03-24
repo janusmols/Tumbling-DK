@@ -28,6 +28,8 @@
 		616951321ABC49E4009E89A4 /* vmtramptumb2014-foto-fig-13.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 616951311ABC49E4009E89A4 /* vmtramptumb2014-foto-fig-13.jpg */; };
 		616951361ABC6378009E89A4 /* Videos.swift in Sources */ = {isa = PBXBuildFile; fileRef = 616951351ABC6377009E89A4 /* Videos.swift */; };
 		616951381ABC63AB009E89A4 /* VideoCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 616951371ABC63AB009E89A4 /* VideoCell.swift */; };
+		6169513A1AC16410009E89A4 /* img6.png in Resources */ = {isa = PBXBuildFile; fileRef = 616951391AC16410009E89A4 /* img6.png */; };
+		6169513C1AC16592009E89A4 /* ResultScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6169513B1AC16592009E89A4 /* ResultScreen.swift */; };
 		61CF0FA11AA8C1300040FCE9 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 61CF0FA01AA8C1300040FCE9 /* AppDelegate.swift */; };
 		61CF0FA41AA8C1300040FCE9 /* Tumbling_DK.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 61CF0FA21AA8C1300040FCE9 /* Tumbling_DK.xcdatamodeld */; };
 		61CF0FAB1AA8C1300040FCE9 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 61CF0FAA1AA8C1300040FCE9 /* Images.xcassets */; };
@@ -84,6 +86,8 @@
 		616951311ABC49E4009E89A4 /* vmtramptumb2014-foto-fig-13.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "vmtramptumb2014-foto-fig-13.jpg"; sourceTree = "<group>"; };
 		616951351ABC6377009E89A4 /* Videos.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Videos.swift; sourceTree = "<group>"; };
 		616951371ABC63AB009E89A4 /* VideoCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = VideoCell.swift; sourceTree = "<group>"; };
+		616951391AC16410009E89A4 /* img6.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = img6.png; sourceTree = "<group>"; };
+		6169513B1AC16592009E89A4 /* ResultScreen.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ResultScreen.swift; sourceTree = "<group>"; };
 		61CF0F9B1AA8C1300040FCE9 /* Tumbling DK.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Tumbling DK.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		61CF0F9F1AA8C1300040FCE9 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		61CF0FA01AA8C1300040FCE9 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -200,6 +204,7 @@
 				613E68251AB4C0D8007C21DB /* CalenderScreen.swift */,
 				613E68211AB4C0A5007C21DB /* RecordsScreen.swift */,
 				613E681F1AB4C084007C21DB /* TopTumblersScreen.swift */,
+				6169513B1AC16592009E89A4 /* ResultScreen.swift */,
 				613E68081AB36EDC007C21DB /* Main.storyboard */,
 				61CF0FAA1AA8C1300040FCE9 /* Images.xcassets */,
 				61CF0FAC1AA8C1300040FCE9 /* LaunchScreen.xib */,
@@ -218,6 +223,7 @@
 				613E68111AB394E3007C21DB /* img3.png */,
 				613E68131AB39554007C21DB /* img4.png */,
 				613E68151AB3957D007C21DB /* img5.png */,
+				616951391AC16410009E89A4 /* img6.png */,
 				613E68171AB4A639007C21DB /* GymDanmarkTumbling.png */,
 				613E68271AB50F67007C21DB /* tumblingimg.png */,
 				613E68291AB615F5007C21DB /* images-4.jpeg */,
@@ -349,6 +355,7 @@
 			files = (
 				61CF0FAE1AA8C1300040FCE9 /* LaunchScreen.xib in Resources */,
 				613E680E1AB39377007C21DB /* img2.png in Resources */,
+				6169513A1AC16410009E89A4 /* img6.png in Resources */,
 				613E680A1AB36EDC007C21DB /* Main.storyboard in Resources */,
 				613E68161AB3957D007C21DB /* img5.png in Resources */,
 				613E682A1AB615F5007C21DB /* images-4.jpeg in Resources */,
@@ -383,6 +390,7 @@
 				613E68241AB4C0BB007C21DB /* VideoScreen.swift in Sources */,
 				613E68201AB4C084007C21DB /* TopTumblersScreen.swift in Sources */,
 				613E68261AB4C0D8007C21DB /* CalenderScreen.swift in Sources */,
+				6169513C1AC16592009E89A4 /* ResultScreen.swift in Sources */,
 				613E67FB1AB31F85007C21DB /* CustomCell.swift in Sources */,
 				616951381ABC63AB009E89A4 /* VideoCell.swift in Sources */,
 				61CF0FEA1AA8E6380040FCE9 /* view.swift in Sources */,

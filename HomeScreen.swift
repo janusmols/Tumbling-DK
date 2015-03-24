@@ -34,6 +34,7 @@ class ViewController: UIViewController, UITableViewDataSource, UITableViewDelega
         var category3 = categories(title: "Sværhedsrekorder", imageName: "img3")
         var category4 = categories(title: "Video", imageName: "img4")
         var category5 = categories(title: "Kalender", imageName: "img5")
+        var category6 = categories(title: "Resultater", imageName: "img6")
 
         //connect the titles to the categoryarray
         arrayOfCategories.append(category1)
@@ -41,6 +42,7 @@ class ViewController: UIViewController, UITableViewDataSource, UITableViewDelega
         arrayOfCategories.append(category3)
         arrayOfCategories.append(category4)
         arrayOfCategories.append(category5)
+        arrayOfCategories.append(category6)
     }
 
     
@@ -94,6 +96,12 @@ class ViewController: UIViewController, UITableViewDataSource, UITableViewDelega
             self.presentViewController(calenderScreen, animated: true, completion: nil)
             break
             
+        case 5:
+            var resultScreen: ResultScreen = self.storyboard?.instantiateViewControllerWithIdentifier("ResultScreen") as ResultScreen
+            self.presentViewController(resultScreen, animated: true, completion: nil)
+            break
+
+        
         default:
             break
             

@@ -28,7 +28,7 @@ class VideoCell: UITableViewCell {
         let requestURL = NSURL(string: videoURL)
         let request = NSURLRequest(URL:requestURL!)
         self.webView.loadRequest(request)
-        webView.scalesPageToFit = true
+        webView.scrollView.scrollEnabled = false
     }
     
 }
