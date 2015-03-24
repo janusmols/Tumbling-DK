@@ -31,6 +31,7 @@ class ResultScreen: UIViewController {
                 let request = NSURLRequest(URL:requestURL!)
                 self.webview.loadRequest(request)
                 
+                
             } else {
                 println(error)
             }
