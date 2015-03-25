@@ -78,6 +78,8 @@ class TopTumblersScreen: UIViewController {
                 self.topTumblerTextView.text = String(self.topTumblerText)
                 //set the backgroundcolor of the text view
                 self.topTumblerTextView.backgroundColor = UIColor .lightTextColor()
+
+
             } else {
                 println(error)
             }

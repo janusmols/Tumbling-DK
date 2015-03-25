@@ -8,7 +8,7 @@
         <!--View Controller-->
         <scene sceneID="CaO-Wv-dij">
             <objects>
-                <viewController storyboardIdentifier="homeViewController" id="4ds-K4-Hbe" customClass="ViewController" customModule="Tumbling_DK" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="HomeScreen" id="4ds-K4-Hbe" customClass="ViewController" customModule="Tumbling_DK" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="MgQ-io-utK"/>
                         <viewControllerLayoutGuide type="bottom" id="iwe-kg-ydX"/>
@@ -319,7 +319,14 @@
                             <webView contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="I89-qb-W3v">
                                 <rect key="frame" x="-4" y="64" width="422" height="628"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <connections>
+                                    <outlet property="delegate" destination="ZKG-WR-9Yd" id="hWM-iQ-KaK"/>
+                                </connections>
                             </webView>
+                            <activityIndicatorView opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" hidesWhenStopped="YES" animating="YES" style="whiteLarge" translatesAutoresizingMaskIntoConstraints="NO" id="pvb-1u-vF9">
+                                <rect key="frame" x="189" y="350" width="37" height="37"/>
+                                <color key="color" red="0.022676209199999998" green="0.1342655992" blue="0.86819744109999997" alpha="1" colorSpace="calibratedRGB"/>
+                            </activityIndicatorView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
@@ -331,6 +338,8 @@
                             <constraint firstAttribute="centerX" secondItem="fHb-9C-DE6" secondAttribute="centerX" constant="-0.5" id="9zE-QK-BTP"/>
                             <constraint firstItem="HIu-d1-oby" firstAttribute="top" secondItem="I89-qb-W3v" secondAttribute="bottom" id="BCA-yc-69q"/>
                             <constraint firstAttribute="trailingMargin" secondItem="I89-qb-W3v" secondAttribute="trailing" constant="-20" id="OrH-uS-sQa"/>
+                            <constraint firstAttribute="centerX" secondItem="pvb-1u-vF9" secondAttribute="centerX" id="SXn-FW-UVb"/>
+                            <constraint firstAttribute="centerY" secondItem="pvb-1u-vF9" secondAttribute="centerY" id="klc-ia-PdV"/>
                             <constraint firstAttribute="trailingMargin" secondItem="euG-rX-PLa" secondAttribute="trailing" constant="-20" id="ofF-93-U0K"/>
                             <constraint firstItem="euG-rX-PLa" firstAttribute="leading" secondItem="eKe-VK-odS" secondAttribute="leadingMargin" constant="-20" id="snY-c9-YeR"/>
                             <constraint firstItem="fHb-9C-DE6" firstAttribute="centerY" secondItem="euG-rX-PLa" secondAttribute="centerY" id="wdr-OP-HVr"/>
@@ -339,6 +348,7 @@
                     </view>
                     <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina55"/>
                     <connections>
+                        <outlet property="activity" destination="pvb-1u-vF9" id="laY-Ig-g8H"/>
                         <outlet property="webView" destination="I89-qb-W3v" id="euC-MW-Sts"/>
                     </connections>
                 </viewController>
@@ -435,16 +445,26 @@
                                                 <webView contentMode="scaleToFill" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="RTc-wl-qqb">
                                                     <rect key="frame" x="0.0" y="0.0" width="414" height="279"/>
                                                     <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                                    <connections>
+                                                        <outlet property="delegate" destination="hG3-Pl-zgb" id="NXw-iW-Evh"/>
+                                                    </connections>
                                                 </webView>
+                                                <activityIndicatorView opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" animating="YES" style="whiteLarge" translatesAutoresizingMaskIntoConstraints="NO" id="fia-Xl-5Zs">
+                                                    <rect key="frame" x="193" y="116" width="37" height="37"/>
+                                                    <color key="color" red="0.022676209199999998" green="0.1342655992" blue="0.86819744109999997" alpha="1" colorSpace="calibratedRGB"/>
+                                                </activityIndicatorView>
                                             </subviews>
                                             <constraints>
                                                 <constraint firstItem="RTc-wl-qqb" firstAttribute="top" secondItem="gve-V1-0Hw" secondAttribute="topMargin" constant="-8" id="0tx-63-1LA"/>
+                                                <constraint firstAttribute="centerY" secondItem="fia-Xl-5Zs" secondAttribute="centerY" id="2Hj-tG-kjq"/>
                                                 <constraint firstItem="RTc-wl-qqb" firstAttribute="leading" secondItem="gve-V1-0Hw" secondAttribute="leadingMargin" constant="-8" id="hsP-KT-dFe"/>
                                                 <constraint firstAttribute="trailingMargin" secondItem="RTc-wl-qqb" secondAttribute="trailing" constant="-8" id="jed-Kp-782"/>
                                                 <constraint firstAttribute="bottomMargin" secondItem="RTc-wl-qqb" secondAttribute="bottom" constant="-8" id="nEz-8w-OHV"/>
+                                                <constraint firstAttribute="centerX" secondItem="fia-Xl-5Zs" secondAttribute="centerX" id="oez-wh-0sw"/>
                                             </constraints>
                                         </tableViewCellContentView>
                                         <connections>
+                                            <outlet property="activity" destination="fia-Xl-5Zs" id="M8H-PH-HMq"/>
                                             <outlet property="webView" destination="RTc-wl-qqb" id="IZp-Cj-hGM"/>
                                         </connections>
                                     </tableViewCell>
@@ -548,6 +568,9 @@
                             <webView contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="XRT-d6-qgK">
                                 <rect key="frame" x="-4" y="64" width="422" height="628"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <connections>
+                                    <outlet property="delegate" destination="N9f-7C-wGN" id="59r-pj-8qM"/>
+                                </connections>
                             </webView>
                             <toolbar opaque="NO" clearsContextBeforeDrawing="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="vjY-Z5-dlE">
                                 <rect key="frame" x="0.0" y="692" width="414" height="44"/>
@@ -575,6 +598,10 @@
                                     </barButtonItem>
                                 </items>
                             </toolbar>
+                            <activityIndicatorView opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" hidesWhenStopped="YES" animating="YES" style="whiteLarge" translatesAutoresizingMaskIntoConstraints="NO" id="cBn-VH-jjX">
+                                <rect key="frame" x="189" y="350" width="37" height="37"/>
+                                <color key="color" red="0.022676209199999998" green="0.1342655992" blue="0.86819744109999997" alpha="1" colorSpace="calibratedRGB"/>
+                            </activityIndicatorView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
@@ -588,12 +615,15 @@
                             <constraint firstItem="Li1-R3-KeN" firstAttribute="top" secondItem="vjY-Z5-dlE" secondAttribute="bottom" id="Wdi-lw-dJj"/>
                             <constraint firstItem="XRT-d6-qgK" firstAttribute="leading" secondItem="5Wc-yQ-RRR" secondAttribute="leadingMargin" constant="-20" id="ZgC-lN-DXc"/>
                             <constraint firstItem="Yd6-ZE-xxA" firstAttribute="leading" secondItem="5Wc-yQ-RRR" secondAttribute="leadingMargin" constant="-20" id="aAE-uN-SWH"/>
+                            <constraint firstAttribute="centerY" secondItem="cBn-VH-jjX" secondAttribute="centerY" id="hZw-cj-pv7"/>
                             <constraint firstItem="Yd6-ZE-xxA" firstAttribute="top" secondItem="S8Z-yo-Xt1" secondAttribute="bottom" id="kxi-ng-dSA"/>
+                            <constraint firstAttribute="centerX" secondItem="cBn-VH-jjX" secondAttribute="centerX" id="pUB-Ei-XiV"/>
                             <constraint firstAttribute="centerX" secondItem="q7Q-DN-2N6" secondAttribute="centerX" id="vGR-U2-MS6"/>
                         </constraints>
                     </view>
                     <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina55"/>
                     <connections>
+                        <outlet property="activity" destination="cBn-VH-jjX" id="l14-M2-9bn"/>
                         <outlet property="webview" destination="XRT-d6-qgK" id="ify-gJ-NN1"/>
                     </connections>
                 </viewController>
@@ -613,6 +643,6 @@
         <simulatedScreenMetrics key="destination" type="retina4"/>
     </simulatedMetricsContainer>
     <inferredMetricsTieBreakers>
-        <segue reference="0qn-w7-7xK"/>
+        <segue reference="5sd-D2-zPK"/>
     </inferredMetricsTieBreakers>
 </document>

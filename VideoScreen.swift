@@ -9,16 +9,23 @@
 import UIKit
 
 class VideoScreen: UIViewController, UITableViewDataSource, UITableViewDelegate {
+
     //Conect tableview
     @IBOutlet weak var tableView: UITableView!
     //initialize the Video array
     var arrayOfVideos: [Videos] = [Videos]()
     
+    var myArray: NSMutableArray! = NSMutableArray()
+    
+    var g_i = 0
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         //call the setUpvideos func
         self.setUpVideos()
-    }
+
+       
+}
 
 
     override func didReceiveMemoryWarning() {
@@ -55,6 +62,16 @@ func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexP
     
     return cell
 }
+
+
+    
+    func webViewDidFinishLoad(_: UIWebView){
+        while g_i++ < 1 {
+        VideoCell().stopSpinning()
+        println("stopload \(g_i)")
+        }
+    }
+
 
     
 }
