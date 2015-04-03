@@ -13,29 +13,29 @@ class ViewController: UIViewController, UITableViewDataSource, UITableViewDelega
     @IBOutlet weak var myTableView: UITableView!
     //initialize the category array
     var arrayOfCategories: [categories] = [categories]()
-
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         //call the setUpCategories func
         self.setUpCategories()
         
-
-    }
-
+        
+}
+    
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
-    }
+}
     
     func setUpCategories(){
-    //set up the the titles for the tableview
+        //set up the the titles for the tableview
         var category1 = categories(title: "Nyheder", imageName: "img1")
         var category2 = categories(title: "Top tumblere", imageName: "img2")
         var category3 = categories(title: "Sværhedsrekorder", imageName: "img3")
         var category4 = categories(title: "Video", imageName: "img4")
         var category5 = categories(title: "Kalender", imageName: "img5")
         var category6 = categories(title: "Resultater", imageName: "img6")
-
+        
         //connect the titles to the categoryarray
         arrayOfCategories.append(category1)
         arrayOfCategories.append(category2)
@@ -43,29 +43,29 @@ class ViewController: UIViewController, UITableViewDataSource, UITableViewDelega
         arrayOfCategories.append(category4)
         arrayOfCategories.append(category5)
         arrayOfCategories.append(category6)
-    }
-
+}
+    
     
     func tableView(tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         //numbers of titles in the array is equal to the rows in the tableview
         return arrayOfCategories.count
-    }
+}
     
     
     func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath) -> UITableViewCell {
         //initialize the cell
         let cell: CustomCell = tableView.dequeueReusableCellWithIdentifier("Cell") as CustomCell
-
+        
         let categories = arrayOfCategories[indexPath.row]
         
         cell.setCell(categories.title, imageName: categories.imageName)
         
         return cell
-    }
+}
     
     
     func tableView(tableView: UITableView, didSelectRowAtIndexPath indexPath: NSIndexPath) {
-    
+        
         let categoriesrow = arrayOfCategories[indexPath.row]
         
         //The category you choose would send you to its own View
@@ -100,18 +100,18 @@ class ViewController: UIViewController, UITableViewDataSource, UITableViewDelega
             var resultScreen: ResultScreen = self.storyboard?.instantiateViewControllerWithIdentifier("ResultScreen") as ResultScreen
             self.presentViewController(resultScreen, animated: true, completion: nil)
             break
-
-        
+            
+            
         default:
             break
             
-
+            
             
             
         }
         
         
-
+        
     }
     
     

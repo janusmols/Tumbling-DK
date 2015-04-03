@@ -42,7 +42,7 @@ class CalenderScreen: UIViewController {
                 
             } else {
                 println(error)
-                
+                //AlertView if no network conection
                 var alert = UIAlertController(title: "Connection error", message: "Unable to connect with the server. Check your internet connection and try again", preferredStyle: UIAlertControllerStyle.Alert)
                 self.presentViewController(alert, animated: true, completion: nil)
                 

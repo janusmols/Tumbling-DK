@@ -17,7 +17,7 @@ class ResultScreen: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-
+        
         
         //retrive the url for the calender
         var query = PFQuery(className:"URLPath")
@@ -37,26 +37,45 @@ class ResultScreen: UIViewController {
                 
             } else {
                 println(error)
+                //AlertView if no network conection
+                var alert = UIAlertController(title: "Connection error", message: "Unable to connect with the server. Check your internet connection and try again", preferredStyle: UIAlertControllerStyle.Alert)
+                self.presentViewController(alert, animated: true, completion: nil)
+                
+                alert.addAction(UIAlertAction(title: "Ok", style: .Default, handler: { action in
+                    switch action.style{
+                    case .Default:
+                        var homeScreen: ViewController = self.storyboard?.instantiateViewControllerWithIdentifier("HomeScreen") as ViewController
+                        self.presentViewController(homeScreen, animated: true, completion: nil)
+                        
+                    case .Cancel:
+                        println("cancel")
+                        
+                    case .Destructive:
+                        println("destructive")
+                    }
+                    }
+                    )
+                )
             }
         }
-
-        
-}
-
+    }
+    
+    
+    
     func webViewDidStartLoad(_: UIWebView){
         //Sart spinning
         activity.hidden = false
         activity.startAnimating()
         
         println("startload")
-    
-}
+        
+    }
     
     func webViewDidFinishLoad(_: UIWebView){
         //stop spinning
         activity.hidden = true
         activity.stopAnimating()
-   
+        
         println("stopload")
     }
 }

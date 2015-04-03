@@ -195,14 +195,14 @@
 		61CF0F9D1AA8C1300040FCE9 /* Tumbling DK */ = {
 			isa = PBXGroup;
 			children = (
-				616951331ABC62F6009E89A4 /* HomeScreen */,
 				61CF0FE81AA8E5790040FCE9 /* MyPlaygroundparse.playground */,
+				616951331ABC62F6009E89A4 /* HomeScreen */,
 				616951341ABC6331009E89A4 /* VideoScreen */,
 				61CF0FA01AA8C1300040FCE9 /* AppDelegate.swift */,
-				61CF0FE91AA8E6380040FCE9 /* view.swift */,
 				613E68041AB32C82007C21DB /* NewsScreen.swift */,
 				613E68251AB4C0D8007C21DB /* CalenderScreen.swift */,
 				613E68211AB4C0A5007C21DB /* RecordsScreen.swift */,
+				61CF0FE91AA8E6380040FCE9 /* view.swift */,
 				613E681F1AB4C084007C21DB /* TopTumblersScreen.swift */,
 				6169513B1AC16592009E89A4 /* ResultScreen.swift */,
 				613E68081AB36EDC007C21DB /* Main.storyboard */,
