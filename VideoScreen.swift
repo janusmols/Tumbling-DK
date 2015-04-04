@@ -10,6 +10,9 @@ import UIKit
 
 class VideoScreen: UIViewController, UITableViewDataSource, UITableViewDelegate {
 
+    //activity icon 
+    @IBOutlet weak var activity: UIActivityIndicatorView!
+    
     //Conect tableview
     @IBOutlet weak var tableView: UITableView!
     //initialize the Video array
@@ -17,7 +20,7 @@ class VideoScreen: UIViewController, UITableViewDataSource, UITableViewDelegate 
     
     var myArray: NSMutableArray! = NSMutableArray()
     
-    var g_i = 0
+
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -63,14 +66,6 @@ func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexP
     return cell
 }
 
-
-    
-    func webViewDidFinishLoad(_: UIWebView){
-        while g_i++ < 1 {
-        VideoCell().stopSpinning()
-        println("stopload \(g_i)")
-        }
-    }
 
 
     
