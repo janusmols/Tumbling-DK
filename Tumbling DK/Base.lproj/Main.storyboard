@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="6751" systemVersion="14D87h" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" initialViewController="4ds-K4-Hbe">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="6751" systemVersion="14D87h" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" initialViewController="ySR-AE-JQR">
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="6736"/>
         <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
@@ -112,25 +112,6 @@
             </objects>
             <point key="canvasLocation" x="922" y="-519"/>
         </scene>
-        <!--Top Tumbler Table-->
-        <scene sceneID="QkM-Ez-92R">
-            <objects>
-                <viewController id="IFE-e0-WeM" customClass="TopTumblerTable" customModule="Tumbling_DK" customModuleProvider="target" sceneMemberID="viewController">
-                    <layoutGuides>
-                        <viewControllerLayoutGuide type="top" id="BTx-9D-PwM"/>
-                        <viewControllerLayoutGuide type="bottom" id="YfP-AO-pR1"/>
-                    </layoutGuides>
-                    <view key="view" contentMode="scaleToFill" id="ESi-ez-3wG">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
-                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                    </view>
-                    <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina55"/>
-                </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="hH1-gD-q0w" userLabel="First Responder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="3" y="292"/>
-        </scene>
         <!--News Screen-->
         <scene sceneID="eXw-Eb-Mle">
             <objects>
@@ -196,6 +177,55 @@
             </objects>
             <point key="canvasLocation" x="469" y="-519"/>
         </scene>
+        <!--Table View Controller-->
+        <scene sceneID="hnK-dn-RhT">
+            <objects>
+                <tableViewController id="ySR-AE-JQR" sceneMemberID="viewController">
+                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="22" sectionFooterHeight="22" id="qaG-LD-KQ3">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <prototypes>
+                            <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="Cell" id="7N4-ii-VQW" customClass="CustomCellSec" customModule="Tumbling_DK">
+                                <autoresizingMask key="autoresizingMask"/>
+                                <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="7N4-ii-VQW" id="thI-2m-tTI">
+                                    <autoresizingMask key="autoresizingMask"/>
+                                    <subviews>
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="cmZ-3x-RNe">
+                                            <rect key="frame" x="280" y="14" width="42" height="21"/>
+                                            <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                            <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                            <nil key="highlightedColor"/>
+                                        </label>
+                                        <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Ug2-27-hJ3">
+                                            <rect key="frame" x="0.0" y="11" width="207" height="22"/>
+                                        </imageView>
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Ngj-Jb-dFo">
+                                            <rect key="frame" x="222" y="14" width="42" height="21"/>
+                                            <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                            <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                            <nil key="highlightedColor"/>
+                                        </label>
+                                    </subviews>
+                                </tableViewCellContentView>
+                                <connections>
+                                    <outlet property="customCapital" destination="cmZ-3x-RNe" id="u0v-i0-NxJ"/>
+                                    <outlet property="customFlag" destination="Ug2-27-hJ3" id="lsc-mC-5kr"/>
+                                    <outlet property="customNameEnglish" destination="Ngj-Jb-dFo" id="oAk-mD-L0z"/>
+                                </connections>
+                            </tableViewCell>
+                        </prototypes>
+                        <connections>
+                            <outlet property="dataSource" destination="ySR-AE-JQR" id="qPH-0S-ldq"/>
+                            <outlet property="delegate" destination="ySR-AE-JQR" id="Cvm-a3-l5q"/>
+                        </connections>
+                    </tableView>
+                    <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina55"/>
+                </tableViewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="RYA-g2-LSD" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="16" y="292"/>
+        </scene>
         <!--Top Tumblers Screen-->
         <scene sceneID="ktn-2d-e5e">
             <objects>
@@ -221,11 +251,7 @@
                                         </connections>
                                     </barButtonItem>
                                     <barButtonItem style="plain" systemItem="flexibleSpace" id="LNc-Dd-3xq"/>
-                                    <barButtonItem title="Flere profiler" id="8j1-pR-RRG">
-                                        <connections>
-                                            <segue destination="IFE-e0-WeM" kind="modal" modalTransitionStyle="crossDissolve" id="YJa-ld-dBX"/>
-                                        </connections>
-                                    </barButtonItem>
+                                    <barButtonItem title="Flere profiler" id="8j1-pR-RRG"/>
                                 </items>
                                 <color key="barTintColor" white="0.84948087989999999" alpha="1" colorSpace="calibratedWhite"/>
                             </toolbar>

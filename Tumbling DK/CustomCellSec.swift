@@ -8,10 +8,13 @@
 
 import UIKit
 
-class CustomCell:  PFTableViewCell {
+
+class CustomCellSec:  PFTableViewCell {
+
+
     
     @IBOutlet weak var customNameEnglish: UILabel!
     @IBOutlet weak var customCapital: UILabel!
-    @IBOutlet weak var customFlag: PFImageView!
+    //@IBOutlet var customFlag: PFImageView!
     
 }
