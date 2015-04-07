@@ -11,10 +11,7 @@ import UIKit
 
 class CustomCellSec:  PFTableViewCell {
 
+    @IBOutlet weak var rowsOfTopTumblere: UILabel!
 
-    
-    @IBOutlet weak var customNameEnglish: UILabel!
-    @IBOutlet weak var customCapital: UILabel!
-    //@IBOutlet var customFlag: PFImageView!
     
 }

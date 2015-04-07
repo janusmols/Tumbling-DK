@@ -78,4 +78,12 @@ class ResultScreen: UIViewController {
         
         println("stopload")
     }
+    
+    
+    @IBAction func tumblingScoreCalculatorAdBanner(sender: AnyObject) {
+        
+        UIApplication.sharedApplication().openURL(NSURL(string: "https://itunes.apple.com/dk/app/tumbling-score-calculator/id940257759?mt=8")!)
+    }
+    
+    
 }
