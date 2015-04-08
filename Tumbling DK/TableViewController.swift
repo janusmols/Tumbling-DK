@@ -10,6 +10,13 @@ import UIKit
 
 class TableViewController: PFQueryTableViewController {
     
+    @IBOutlet weak var navigationBar: UINavigationBar!
+    
+    
+    override func viewDidLoad() {
+        
+    }
+    
     // Initialise the PFQueryTable tableview
     override init!(style: UITableViewStyle, className: String!) {
         super.init(style: style, className: className)
@@ -41,8 +48,10 @@ class TableViewController: PFQueryTableViewController {
         }
         
         // Extract values from the PFObject to display in the table cell
-        cell.rowsOfTopTumblere.text = object["rowsOfTopTumblere"] as String!
-        
+        if object["rowsOfTopTumblere"] != nil{
+            println(object["rowsOfTopTumblere"])
+            cell.rowsOfTopTumblere.text = object["rowsOfTopTumblere"] as String!
+        }
         
         return cell
 
