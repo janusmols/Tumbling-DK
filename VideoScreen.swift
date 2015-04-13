@@ -8,66 +8,56 @@
 
 import UIKit
 
-class VideoScreen: UIViewController, UITableViewDataSource, UITableViewDelegate {
-
-    //activity icon 
-    @IBOutlet weak var activity: UIActivityIndicatorView!
+class VideoScreen: PFQueryTableViewController {
     
-    //Conect tableview
-    @IBOutlet weak var tableView: UITableView!
-    //initialize the Video array
-    var arrayOfVideos: [Videos] = [Videos]()
-    
-    var myArray: NSMutableArray! = NSMutableArray()
-    
-
     
     override func viewDidLoad() {
-        super.viewDidLoad()
-        //call the setUpvideos func
-        self.setUpVideos()
-
-       
-}
-
-
-    override func didReceiveMemoryWarning() {
-        super.didReceiveMemoryWarning()
-        // Dispose of any resources that can be recreated.
-}
-
-
-
-func setUpVideos(){
-
-    //set up the the different youtube videos for the tableview
-    var video1 = Videos(videoURL: "https://www.youtube.com/watch?v=OvSf6kk07uE")
-    var video2 = Videos(videoURL: "https://www.youtube.com/watch?v=fcLQPQ02VwE")
-    var video3 = Videos(videoURL: "https://www.youtube.com/watch?v=T-SAHgs7IEY")
-    //connect the videos to the videoarray
-    arrayOfVideos.append(video1)
-    arrayOfVideos.append(video2)
-    arrayOfVideos.append(video3)
-}
-
-func tableView(tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-    //numbers of videos in the array is equal to the rows in the tableview
-    return arrayOfVideos.count
-}
-
-func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath) -> UITableViewCell {
-    //initialize the cell
-    let cell: VideoCell = tableView.dequeueReusableCellWithIdentifier("Cell") as! VideoCell
+        
+    }
     
-    let videos = arrayOfVideos[indexPath.row]
+    // Initialise the PFQueryTable tableview
     
-    cell.setCell(videos.videoURL)
+    override init!(style: UITableViewStyle, className: String!) {
+        super.init(style: style, className: className)
+    }
     
-    return cell
-}
-
-
-
+    required init(coder aDecoder: NSCoder) {
+        super.init(coder: aDecoder)
+        
+        // Configure the PFQueryTableView
+        self.parseClassName = "Video"
+        self.textKey = "videoURL"
+        self.pullToRefreshEnabled = true
+        self.paginationEnabled = false
+    }
     
+    // Define the query that will provide the data for the table view
+    override func queryForTable() -> PFQuery! {
+        var query = PFQuery(className: "Video")
+        query.orderByAscending("videoURL")
+        return query
+    }
+    
+    
+    
+    //override func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath) -> UITableViewCell
+    override func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath, object: PFObject) -> PFTableViewCell {
+        //Oneshoot
+        var g_oneshoot = false
+        let cell: VideoCell = tableView.dequeueReusableCellWithIdentifier("Cell") as! VideoCell
+        
+        // Extract values from the PFObject to display in the table cell
+        if object["videoURL"] != nil {
+            println(object["videoURL"])
+            var url = object["videoURL"] as! String
+            cell.setCell(url)
+            g_oneshoot = true
+            
+        }
+        
+
+        return cell
+        
+    }
 }
 

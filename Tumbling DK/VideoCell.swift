@@ -8,22 +8,22 @@
 
 import UIKit
 
-class VideoCell: UITableViewCell {
+class VideoCell: PFTableViewCell {
     
-
+    
     @IBOutlet weak var webView: UIWebView!
     
     override func awakeFromNib() {
         super.awakeFromNib()
         // Initialization code
-}
+    }
     
     
     override func setSelected(selected: Bool, animated: Bool) {
         super.setSelected(selected, animated: animated)
         
         // Configure the view for the selected state
-}
+    }
     
     func setCell(videoURL: String){
         //set up the webview
@@ -31,13 +31,14 @@ class VideoCell: UITableViewCell {
         let request = NSURLRequest(URL:requestURL!)
         self.webView.loadRequest(request)
         webView.scrollView.scrollEnabled = false
-
-
+        
+        
+        
+    }
+    
+    
     
 }
-    
 
- 
-}
 
 
