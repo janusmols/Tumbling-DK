@@ -33,7 +33,7 @@ class TopTumblersScreen: UIViewController {
         queryurl.getObjectInBackgroundWithId("KZKxYp9aWz") {
             (toptumblerurlimagepath: PFObject!, error: NSError!) -> Void in
             if error == nil && toptumblerurlimagepath != nil {
-                self.topTumblerImageUrlPath = toptumblerurlimagepath["toptumblerurlimagepath"] as String
+                self.topTumblerImageUrlPath = toptumblerurlimagepath["toptumblerurlimagepath"] as! String
                 println(self.topTumblerImageUrlPath)
                 //create variable "urll" which is equals to our retrieved imagelink string from parse
                 let url = NSURL(string: self.topTumblerImageUrlPath)
@@ -62,7 +62,7 @@ class TopTumblersScreen: UIViewController {
         query.getObjectInBackgroundWithId("KZKxYp9aWz") {
             (toptumblertitle: PFObject!, error: NSError!) -> Void in
             if error == nil && toptumblertitle != nil {
-                self.topTumblerTitle = toptumblertitle["toptumblertitle"] as String
+                self.topTumblerTitle = toptumblertitle["toptumblertitle"] as! String
                 self.topTumblerTitleLabel.text = String(self.topTumblerTitle)
             } else {
                 println(error)
@@ -74,7 +74,7 @@ class TopTumblersScreen: UIViewController {
         querytext.getObjectInBackgroundWithId("KZKxYp9aWz") {
             (toptumblertext: PFObject!, error: NSError!) -> Void in
             if error == nil && toptumblertext != nil {
-                self.topTumblerText = toptumblertext["toptumblertext"] as String
+                self.topTumblerText = toptumblertext["toptumblertext"] as! String
                 self.topTumblerTextView.text = String(self.topTumblerText)
                 //set the backgroundcolor of the text view
                 self.topTumblerTextView.backgroundColor = UIColor .lightTextColor()

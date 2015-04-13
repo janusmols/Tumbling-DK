@@ -42,7 +42,7 @@ class TableViewController: PFQueryTableViewController {
     //override func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath) -> UITableViewCell
     override func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath, object: PFObject) -> PFTableViewCell {
         
-        var cell = tableView.dequeueReusableCellWithIdentifier("Cell") as CustomCellSec!
+        var cell = tableView.dequeueReusableCellWithIdentifier("Cell") as! CustomCellSec!
         if cell == nil {
             cell = CustomCellSec(style: UITableViewCellStyle.Default, reuseIdentifier: "Cell")
         }
@@ -50,7 +50,7 @@ class TableViewController: PFQueryTableViewController {
         // Extract values from the PFObject to display in the table cell
         if object["rowsOfTopTumblere"] != nil{
             println(object["rowsOfTopTumblere"])
-            cell.rowsOfTopTumblere.text = object["rowsOfTopTumblere"] as String!
+            cell.rowsOfTopTumblere.text = object["rowsOfTopTumblere"] as! String!
         }
         
         return cell

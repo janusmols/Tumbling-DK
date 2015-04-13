@@ -57,7 +57,7 @@ func tableView(tableView: UITableView, numberOfRowsInSection section: Int) -> In
 
 func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath) -> UITableViewCell {
     //initialize the cell
-    let cell: VideoCell = tableView.dequeueReusableCellWithIdentifier("Cell") as VideoCell
+    let cell: VideoCell = tableView.dequeueReusableCellWithIdentifier("Cell") as! VideoCell
     
     let videos = arrayOfVideos[indexPath.row]
     

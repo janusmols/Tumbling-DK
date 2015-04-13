@@ -25,8 +25,8 @@ class ResultScreen: UIViewController {
             (urlpathresult: PFObject!, error: NSError!) -> Void in
             if error == nil && urlpathresult != nil {
                 
-                println(urlpathresult["urlpathresult"] as String)
-                self.URLString = urlpathresult["urlpathresult"] as String
+                println(urlpathresult["urlpathresult"] as! String)
+                self.URLString = urlpathresult["urlpathresult"] as! String
                 println(self.URLString)
                 //set up the webview
                 let requestURL = NSURL(string: self.URLString)
@@ -44,7 +44,7 @@ class ResultScreen: UIViewController {
                 alert.addAction(UIAlertAction(title: "Ok", style: .Default, handler: { action in
                     switch action.style{
                     case .Default:
-                        var homeScreen: ViewController = self.storyboard?.instantiateViewControllerWithIdentifier("HomeScreen") as ViewController
+                        var homeScreen: ViewController = self.storyboard?.instantiateViewControllerWithIdentifier("HomeScreen") as! ViewController
                         self.presentViewController(homeScreen, animated: true, completion: nil)
                         
                     case .Cancel:

@@ -32,8 +32,8 @@ class CalenderScreen: UIViewController {
             (urlpath: PFObject!, error: NSError!) -> Void in
             if error == nil && urlpath != nil {
                 
-                println(urlpath["urlpath"] as String)
-                self.URLString = urlpath["urlpath"] as String
+                println(urlpath["urlpath"] as! String)
+                self.URLString = urlpath["urlpath"] as! String
                 println(self.URLString)
         //set up the webview
         let requestURL = NSURL(string: self.URLString)
@@ -49,7 +49,7 @@ class CalenderScreen: UIViewController {
                 alert.addAction(UIAlertAction(title: "Ok", style: .Default, handler: { action in
                     switch action.style{
                     case .Default:
-                        var homeScreen: ViewController = self.storyboard?.instantiateViewControllerWithIdentifier("HomeScreen") as ViewController
+                        var homeScreen: ViewController = self.storyboard?.instantiateViewControllerWithIdentifier("HomeScreen") as! ViewController
                         self.presentViewController(homeScreen, animated: true, completion: nil)
 
                     case .Cancel:

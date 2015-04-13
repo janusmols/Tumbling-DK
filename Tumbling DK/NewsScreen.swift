@@ -29,8 +29,8 @@ class NewsScreen: UIViewController {
             (newsfeed: PFObject!, error: NSError!) -> Void in
             if error == nil && newsfeed != nil {
                 
-                println(newsfeed["newsfeed"] as String)
-                self.newstext = newsfeed["newsfeed"] as String
+                println(newsfeed["newsfeed"] as! String)
+                self.newstext = newsfeed["newsfeed"] as! String
                 println(self.newstext)
                 self.newsLabel.text = String(self.newstext)
             } else {

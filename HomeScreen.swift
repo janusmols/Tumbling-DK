@@ -54,7 +54,7 @@ class ViewController: UIViewController, UITableViewDataSource, UITableViewDelega
     
     func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath) -> UITableViewCell {
         //initialize the cell
-        let cell: CustomCell = tableView.dequeueReusableCellWithIdentifier("Cell") as CustomCell
+        let cell: CustomCell = tableView.dequeueReusableCellWithIdentifier("Cell") as! CustomCell
         
         let categories = arrayOfCategories[indexPath.row]
         
@@ -72,32 +72,32 @@ class ViewController: UIViewController, UITableViewDataSource, UITableViewDelega
         switch(indexPath.row){
             
         case 0:
-            var newsScreen: NewsScreen = self.storyboard?.instantiateViewControllerWithIdentifier("NewsScreen") as NewsScreen
+            var newsScreen: NewsScreen = self.storyboard?.instantiateViewControllerWithIdentifier("NewsScreen") as! NewsScreen
             self.presentViewController(newsScreen, animated: true, completion: nil)
             break
             
         case 1:
-            var topTumblersScreen: TopTumblersScreen = self.storyboard?.instantiateViewControllerWithIdentifier("TopTumblersScreen") as TopTumblersScreen
+            var topTumblersScreen: TopTumblersScreen = self.storyboard?.instantiateViewControllerWithIdentifier("TopTumblersScreen") as! TopTumblersScreen
             self.presentViewController(topTumblersScreen, animated: true, completion: nil)
             break
             
         case 2:
-            var recordsScreen: RecordsScreen = self.storyboard?.instantiateViewControllerWithIdentifier("RecordsScreen") as RecordsScreen
+            var recordsScreen: RecordsScreen = self.storyboard?.instantiateViewControllerWithIdentifier("RecordsScreen") as! RecordsScreen
             self.presentViewController(recordsScreen, animated: true, completion: nil)
             break
             
         case 3:
-            var videoScreen: VideoScreen = self.storyboard?.instantiateViewControllerWithIdentifier("VideoScreen") as VideoScreen
+            var videoScreen: VideoScreen = self.storyboard?.instantiateViewControllerWithIdentifier("VideoScreen") as! VideoScreen
             self.presentViewController(videoScreen, animated: true, completion: nil)
             break
             
         case 4:
-            var calenderScreen: CalenderScreen = self.storyboard?.instantiateViewControllerWithIdentifier("CalenderScreen") as CalenderScreen
+            var calenderScreen: CalenderScreen = self.storyboard?.instantiateViewControllerWithIdentifier("CalenderScreen") as! CalenderScreen
             self.presentViewController(calenderScreen, animated: true, completion: nil)
             break
             
         case 5:
-            var resultScreen: ResultScreen = self.storyboard?.instantiateViewControllerWithIdentifier("ResultScreen") as ResultScreen
+            var resultScreen: ResultScreen = self.storyboard?.instantiateViewControllerWithIdentifier("ResultScreen") as! ResultScreen
             self.presentViewController(resultScreen, animated: true, completion: nil)
             break
             

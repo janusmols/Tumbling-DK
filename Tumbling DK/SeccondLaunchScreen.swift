@@ -13,7 +13,7 @@ class SeccondLaunchScreen: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
 
-        var homeScreen: ViewController = self.storyboard?.instantiateViewControllerWithIdentifier("HomeScreen") as ViewController
+        var homeScreen: ViewController = self.storyboard?.instantiateViewControllerWithIdentifier("HomeScreen") as! ViewController
         self.presentViewController(homeScreen, animated: true, completion: nil)
 
     }
