@@ -22,53 +22,18 @@ class TopTumblersScreen: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        retrieveImage()
+        retrieveText()
+        retrieveTittle()
 
         //users can't edit the twxt
         topTumblerTextView.editable = false
-
-   
-        
-        
-        
-
-        
-        
-        
-        //creating a query which retrive the title string from parse
-        var query = PFQuery(className:"TopTumbler")
-        query.getObjectInBackgroundWithId("KZKxYp9aWz") {
-            (toptumblertitle: PFObject!, error: NSError!) -> Void in
-            if error == nil && toptumblertitle != nil {
-                self.topTumblerTitle = toptumblertitle["toptumblertitle"] as! String
-                self.topTumblerTitleLabel.text = String(self.topTumblerTitle)
-            } else {
-                println(error)
-            }
-        }
-        
-        //creating a query which retrive the text string from parse
-        var querytext = PFQuery(className:"TopTumbler")
-        querytext.getObjectInBackgroundWithId("KZKxYp9aWz") {
-            (toptumblertext: PFObject!, error: NSError!) -> Void in
-            if error == nil && toptumblertext != nil {
-                self.topTumblerText = toptumblertext["toptumblertext"] as! String
-                self.topTumblerTextView.text = String(self.topTumblerText)
-                //set the backgroundcolor of the text view
-                self.topTumblerTextView.backgroundColor = UIColor .lightTextColor()
-
-
-            } else {
-                println(error)
-            }
-        }
-
-
-    }
+}
 
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
-    }
+}
     
     
     func retrieveImage(){
@@ -96,6 +61,42 @@ class TopTumblersScreen: UIViewController {
             }
         }
 
-    }
+}
+    
+    
+    func retrieveTittle(){
+        //creating a query which retrive the title string from parse
+        var query = PFQuery(className:"TopTumbler")
+        query.getObjectInBackgroundWithId("KZKxYp9aWz") {
+            (toptumblertitle: PFObject!, error: NSError!) -> Void in
+            if error == nil && toptumblertitle != nil {
+                self.topTumblerTitle = toptumblertitle["toptumblertitle"] as! String
+                self.topTumblerTitleLabel.text = String(self.topTumblerTitle)
+            } else {
+                println(error)
+            }
+        }
+
+}
+    
+    
+    func retrieveText(){
+        //creating a query which retrive the text string from parse
+        var querytext = PFQuery(className:"TopTumbler")
+        querytext.getObjectInBackgroundWithId("KZKxYp9aWz") {
+            (toptumblertext: PFObject!, error: NSError!) -> Void in
+            if error == nil && toptumblertext != nil {
+                self.topTumblerText = toptumblertext["toptumblertext"] as! String
+                self.topTumblerTextView.text = String(self.topTumblerText)
+                //set the backgroundcolor of the text view
+                self.topTumblerTextView.backgroundColor = UIColor .lightTextColor()
+                
+                
+            } else {
+                println(error)
+            }
+        }
+
+}
     
 }

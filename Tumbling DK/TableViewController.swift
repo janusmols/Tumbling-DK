@@ -49,6 +49,7 @@ class TableViewController: PFQueryTableViewController {
         
         // Extract values from the PFObject to display in the table cell
         if object["toptumblertitle"] != nil{
+            println("OBJECTIDS\(object.objectId)")
             println(object["toptumblertitle"])
             cell.rowsOfTopTumblere.text = object["toptumblertitle"] as! String!
         }
@@ -56,6 +57,39 @@ class TableViewController: PFQueryTableViewController {
         return cell
 
     }
+    
+    override func tableView(tableView: UITableView, didSelectRowAtIndexPath indexPath: NSIndexPath) {
+        
+        var rows: AnyObject = objects[indexPath.row]
+        
+        switch(indexPath.row){
+        
+        case 0:
+        var topTumblersScreen: TopTumblersScreen = self.storyboard?.instantiateViewControllerWithIdentifier("TopTumblersScreen") as! TopTumblersScreen
+            self.presentViewController(topTumblersScreen, animated: true, completion: nil)
+        break
+        
+        case 1:
+        var topTumblersScreen: TopTumblersScreen = self.storyboard?.instantiateViewControllerWithIdentifier("TopTumblersScreen") as! TopTumblersScreen
+        self.presentViewController(topTumblersScreen, animated: true, completion: nil)
+        break
+        
+        case 2:
+        var topTumblersScreen: TopTumblersScreen = self.storyboard?.instantiateViewControllerWithIdentifier("TopTumblersScreen") as! TopTumblersScreen
+            self.presentViewController(topTumblersScreen, animated: true, completion: nil)
+        break
+        
+        case 3:
+        var topTumblersScreen: TopTumblersScreen = self.storyboard?.instantiateViewControllerWithIdentifier("TopTumblersScreen") as! TopTumblersScreen
+            self.presentViewController(topTumblersScreen, animated: true, completion: nil)
+        break
+        
+        default:
+        break
+    }
 }
+    }
+
+
 
 
