@@ -52,6 +52,10 @@ class TableViewController: PFQueryTableViewController {
             println("OBJECTIDS\(object.objectId)")
             println(object["toptumblertitle"])
             cell.rowsOfTopTumblere.text = object["toptumblertitle"] as! String!
+    
+           var arrayOfObjects = [object.objectId]
+           println(arrayOfObjects)
+           println("FIRST OBJECT \(arrayOfObjects[0])")
         }
         
         return cell
@@ -61,6 +65,8 @@ class TableViewController: PFQueryTableViewController {
     override func tableView(tableView: UITableView, didSelectRowAtIndexPath indexPath: NSIndexPath) {
         var topTumblersScreen: TopTumblersScreen = self.storyboard?.instantiateViewControllerWithIdentifier("TopTumblersScreen") as! TopTumblersScreen
         self.presentViewController(topTumblersScreen, animated: true, completion: nil)
+        
+
         }
     }
 
