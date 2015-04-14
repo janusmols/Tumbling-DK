@@ -10,7 +10,7 @@ import UIKit
 
 class TableViewController: PFQueryTableViewController {
     
-    @IBOutlet weak var navigationBar: UINavigationBar!
+
     
     
     override func viewDidLoad() {
@@ -27,7 +27,7 @@ class TableViewController: PFQueryTableViewController {
         
         // Configure the PFQueryTableView
         self.parseClassName = "TopTumbler"
-        self.textKey = "rowsOfTopTumblere"
+        self.textKey = "toptumblertitle"
         self.pullToRefreshEnabled = true
         self.paginationEnabled = false
     }
@@ -35,7 +35,7 @@ class TableViewController: PFQueryTableViewController {
     // Define the query that will provide the data for the table view
     override func queryForTable() -> PFQuery! {
         var query = PFQuery(className: "TopTumbler")
-        query.orderByAscending("rowsOfTopTumblere")
+        query.orderByAscending("toptumblertitle")
         return query
     }
     
@@ -48,9 +48,9 @@ class TableViewController: PFQueryTableViewController {
         }
         
         // Extract values from the PFObject to display in the table cell
-        if object["rowsOfTopTumblere"] != nil{
-            println(object["rowsOfTopTumblere"])
-            cell.rowsOfTopTumblere.text = object["rowsOfTopTumblere"] as! String!
+        if object["toptumblertitle"] != nil{
+            println(object["toptumblertitle"])
+            cell.rowsOfTopTumblere.text = object["toptumblertitle"] as! String!
         }
         
         return cell

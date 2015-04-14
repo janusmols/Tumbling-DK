@@ -15,6 +15,7 @@ class VideoScreen: PFQueryTableViewController {
         
     }
     
+    
     // Initialise the PFQueryTable tableview
     
     override init!(style: UITableViewStyle, className: String!) {
@@ -38,7 +39,7 @@ class VideoScreen: PFQueryTableViewController {
         return query
     }
     
-    
+
     
     //override func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath) -> UITableViewCell
     override func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath, object: PFObject) -> PFTableViewCell {

@@ -28,29 +28,6 @@ class TopTumblersScreen: UIViewController {
 
    
         
-        //creating a query which retrive the url string from parse for the profile image
-        var queryurl = PFQuery(className:"TopTumbler")
-        queryurl.getObjectInBackgroundWithId("KZKxYp9aWz") {
-            (toptumblerurlimagepath: PFObject!, error: NSError!) -> Void in
-            if error == nil && toptumblerurlimagepath != nil {
-                self.topTumblerImageUrlPath = toptumblerurlimagepath["toptumblerurlimagepath"] as! String
-                println(self.topTumblerImageUrlPath)
-                //create variable "urll" which is equals to our retrieved imagelink string from parse
-                let url = NSURL(string: self.topTumblerImageUrlPath)
-                //get the image from the url
-                let data = NSData(contentsOfURL: url!)
-                //check that the image is downloaded
-                if let data = NSData(contentsOfURL: url!){
-                    //our profile image is equal to our image from parse via link
-                    self.topTumblerImage.image = UIImage(data: data)
-                    
-                }
-
-                
-            } else {
-                println(error)
-            }
-        }
         
         
 
@@ -91,6 +68,34 @@ class TopTumblersScreen: UIViewController {
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
+    }
+    
+    
+    func retrieveImage(){
+        //creating a query which retrive the url string from parse for the profile image
+        var queryurl = PFQuery(className:"TopTumbler")
+        queryurl.getObjectInBackgroundWithId("KZKxYp9aWz") {
+            (toptumblerurlimagepath: PFObject!, error: NSError!) -> Void in
+            if error == nil && toptumblerurlimagepath != nil {
+                self.topTumblerImageUrlPath = toptumblerurlimagepath["toptumblerurlimagepath"] as! String
+                println(self.topTumblerImageUrlPath)
+                //create variable "urll" which is equals to our retrieved imagelink string from parse
+                let url = NSURL(string: self.topTumblerImageUrlPath)
+                //get the image from the url
+                let data = NSData(contentsOfURL: url!)
+                //check that the image is downloaded
+                if let data = NSData(contentsOfURL: url!){
+                    //our profile image is equal to our image from parse via link
+                    self.topTumblerImage.image = UIImage(data: data)
+                    
+                }
+                
+                
+            } else {
+                println(error)
+            }
+        }
+
     }
     
 }
