@@ -24,7 +24,7 @@ class TopTumblersScreen: UIViewController {
         super.viewDidLoad()
         retrieveImage()
         retrieveText()
-        retrieveTittle()
+        //retrieveTittle()
 
         //users can't edit the twxt
         topTumblerTextView.editable = false
@@ -64,10 +64,10 @@ class TopTumblersScreen: UIViewController {
 }
     
     
-    func retrieveTittle(){
+    func retrieveTittle(objectID : String){
         //creating a query which retrive the title string from parse
         var query = PFQuery(className:"TopTumbler")
-        query.getObjectInBackgroundWithId("KZKxYp9aWz") {
+        query.getObjectInBackgroundWithId(objectID) {
             (toptumblertitle: PFObject!, error: NSError!) -> Void in
             if error == nil && toptumblertitle != nil {
                 self.topTumblerTitle = toptumblertitle["toptumblertitle"] as! String
