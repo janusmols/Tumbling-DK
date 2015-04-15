@@ -19,7 +19,7 @@ class NewsScreen: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-
+        println("\(g_arrayOfObjectIdStrings[2])")
         //Users are not allowed to edit the news
         newsLabel.editable = false
     

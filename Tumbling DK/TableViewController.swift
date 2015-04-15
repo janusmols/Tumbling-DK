@@ -8,9 +8,11 @@
 
 import UIKit
 
-class TableViewController: PFQueryTableViewController {
-    
+var g_arrayOfObjectIdStrings : [String] = ["", "", "", "", "", "", "", "", "", "", "", "", "", "", "", "", "", "", "", "", "", "", "", "", "", "", "", "", "", "", "", "", "", "", "", "", "", "", "", "", "", "", ""]
+var g_i : Int = 0
 
+
+class TableViewController: PFQueryTableViewController {
     
     
     override func viewDidLoad() {
@@ -39,9 +41,10 @@ class TableViewController: PFQueryTableViewController {
         return query
     }
     
+    
+
     //override func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath) -> UITableViewCell
     override func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath, object: PFObject) -> PFTableViewCell {
-        
         var cell = tableView.dequeueReusableCellWithIdentifier("Cell") as! CustomCellSec!
         if cell == nil {
             cell = CustomCellSec(style: UITableViewCellStyle.Default, reuseIdentifier: "Cell")
@@ -49,20 +52,21 @@ class TableViewController: PFQueryTableViewController {
         
         // Extract values from the PFObject to display in the table cell
         if object["toptumblertitle"] != nil{
-            println("OBJECTIDS\(object.objectId)")
+            println("OBJECTIDS   \(object.objectId)")
             println(object["toptumblertitle"])
             cell.rowsOfTopTumblere.text = object["toptumblertitle"] as! String!
-    
-           var arrayOfObjects = [object.objectId]
-           println(arrayOfObjects)
-           println("FIRST OBJECT \(arrayOfObjects[0])")
-        }
+            }
         
+        g_arrayOfObjectIdStrings[g_i++] = object.objectId
+        //g_arrayOfObjectIdStrings[1] = "Hej1"
+        //g_arrayOfObjectIdStrings[2] = "Hej2"
+
         return cell
 
     }
     
     override func tableView(tableView: UITableView, didSelectRowAtIndexPath indexPath: NSIndexPath) {
+        
         var topTumblersScreen: TopTumblersScreen = self.storyboard?.instantiateViewControllerWithIdentifier("TopTumblersScreen") as! TopTumblersScreen
         self.presentViewController(topTumblersScreen, animated: true, completion: nil)
         
