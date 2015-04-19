@@ -37,7 +37,7 @@ class TableViewController: PFQueryTableViewController {
     // Define the query that will provide the data for the table view
     override func queryForTable() -> PFQuery! {
         var query = PFQuery(className: "TopTumbler")
-        query.orderByAscending("toptumblertitle")
+        query.orderByAscending("createdAt")
         return query
     }
     
