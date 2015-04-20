@@ -10,21 +10,34 @@ import UIKit
 
 class RetrieveAraryIntoTableView: UIViewController {
 
+    @IBOutlet weak var tableView: UITableView!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         var query = PFQuery(className:"TopTumbler")
-     
-        query.findObjectsInBackgroundWithBlock({(NSArray objects, NSError error) in
-            if (error != nil) {
+        query.selectKeys(["toptumblertitle"])
+        query.findObjectsInBackgroundWithBlock {
+            (objects: [AnyObject]!, error: NSError!) -> Void in
+            if error == nil {
                 println(objects)
+               var arrayOfNames = objects
+                println(arrayOfNames)
+            
             }
-            else {
-                NSLog("objects %@", objects as NSArray)
-     }
-        })
-        
+        }
    
 }
+    
+    func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath) -> UITableViewCell {
+        //initialize the cell
+        let cell: CustomCell = tableView.dequeueReusableCellWithIdentifier("Cell") as! CustomCell
+        
+
+        
+        
+        return cell
+    }
+    
 
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()

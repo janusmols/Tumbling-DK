@@ -9,6 +9,8 @@
 /* Begin PBXBuildFile section */
 		61352D361AE436AE003E5B27 /* Retrieve arary into tableview.swift in Sources */ = {isa = PBXBuildFile; fileRef = 61352D351AE436AE003E5B27 /* Retrieve arary into tableview.swift */; };
 		61352D381AE43F98003E5B27 /* LiveScoreScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = 61352D371AE43F98003E5B27 /* LiveScoreScreen.swift */; };
+		61352D3C1AE53CA6003E5B27 /* img9.png in Resources */ = {isa = PBXBuildFile; fileRef = 61352D3B1AE53CA6003E5B27 /* img9.png */; };
+		61352D3E1AE5584D003E5B27 /* img7.png in Resources */ = {isa = PBXBuildFile; fileRef = 61352D3D1AE5584D003E5B27 /* img7.png */; };
 		613613B41AD05EA900908E1F /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 613E68081AB36EDC007C21DB /* Main.storyboard */; };
 		613613B61AD05FDB00908E1F /* TableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 613613B51AD05FDB00908E1F /* TableViewController.swift */; };
 		613613BE1AD2F97500908E1F /* icon-ios7-arrow-left-128.png in Resources */ = {isa = PBXBuildFile; fileRef = 613613BD1AD2F97500908E1F /* icon-ios7-arrow-left-128.png */; };
@@ -72,6 +74,8 @@
 /* Begin PBXFileReference section */
 		61352D351AE436AE003E5B27 /* Retrieve arary into tableview.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Retrieve arary into tableview.swift"; sourceTree = "<group>"; };
 		61352D371AE43F98003E5B27 /* LiveScoreScreen.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LiveScoreScreen.swift; sourceTree = "<group>"; };
+		61352D3B1AE53CA6003E5B27 /* img9.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = img9.png; sourceTree = "<group>"; };
+		61352D3D1AE5584D003E5B27 /* img7.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = img7.png; sourceTree = "<group>"; };
 		613613B51AD05FDB00908E1F /* TableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TableViewController.swift; sourceTree = "<group>"; };
 		613613BD1AD2F97500908E1F /* icon-ios7-arrow-left-128.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "icon-ios7-arrow-left-128.png"; sourceTree = "<group>"; };
 		613613BF1AD2FDF200908E1F /* icon-ios7-arrow-left-1289.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "icon-ios7-arrow-left-1289.png"; sourceTree = "<group>"; };
@@ -162,6 +166,30 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		61352D3F1AE5738B003E5B27 /* NewsScreen */ = {
+			isa = PBXGroup;
+			children = (
+				613E68041AB32C82007C21DB /* NewsScreen.swift */,
+			);
+			name = NewsScreen;
+			sourceTree = "<group>";
+		};
+		61352D401AE573A7003E5B27 /* CalenderScreen */ = {
+			isa = PBXGroup;
+			children = (
+				613E68251AB4C0D8007C21DB /* CalenderScreen.swift */,
+			);
+			name = CalenderScreen;
+			sourceTree = "<group>";
+		};
+		61352D411AE573C4003E5B27 /* ResultScreen */ = {
+			isa = PBXGroup;
+			children = (
+				6169513B1AC16592009E89A4 /* ResultScreen.swift */,
+			);
+			name = ResultScreen;
+			sourceTree = "<group>";
+		};
 		615EF6F01ACFEC9000FA618A /* TopTumbler */ = {
 			isa = PBXGroup;
 			children = (
@@ -220,11 +248,11 @@
 				616951331ABC62F6009E89A4 /* HomeScreen */,
 				616951341ABC6331009E89A4 /* VideoScreen */,
 				615EF6F01ACFEC9000FA618A /* TopTumbler */,
-				613E68041AB32C82007C21DB /* NewsScreen.swift */,
-				613E68251AB4C0D8007C21DB /* CalenderScreen.swift */,
-				6169513B1AC16592009E89A4 /* ResultScreen.swift */,
-				61352D351AE436AE003E5B27 /* Retrieve arary into tableview.swift */,
+				61352D3F1AE5738B003E5B27 /* NewsScreen */,
+				61352D401AE573A7003E5B27 /* CalenderScreen */,
+				61352D411AE573C4003E5B27 /* ResultScreen */,
 				61352D371AE43F98003E5B27 /* LiveScoreScreen.swift */,
+				61352D351AE436AE003E5B27 /* Retrieve arary into tableview.swift */,
 				613E68081AB36EDC007C21DB /* Main.storyboard */,
 				61BE2DED1ADC2E2300307BB9 /* Launch Screen.xib */,
 				61CF0FA21AA8C1300040FCE9 /* Tumbling_DK.xcdatamodeld */,
@@ -247,6 +275,8 @@
 				613E68131AB39554007C21DB /* img4.png */,
 				613E68151AB3957D007C21DB /* img5.png */,
 				616951391AC16410009E89A4 /* img6.png */,
+				61352D3B1AE53CA6003E5B27 /* img9.png */,
+				61352D3D1AE5584D003E5B27 /* img7.png */,
 				613E68171AB4A639007C21DB /* GymDanmarkTumbling.png */,
 				613E68271AB50F67007C21DB /* tumblingimg.png */,
 				613E68291AB615F5007C21DB /* images-4.jpeg */,
@@ -382,6 +412,7 @@
 				613E680E1AB39377007C21DB /* img2.png in Resources */,
 				6169513A1AC16410009E89A4 /* img6.png in Resources */,
 				613613BE1AD2F97500908E1F /* icon-ios7-arrow-left-128.png in Resources */,
+				61352D3E1AE5584D003E5B27 /* img7.png in Resources */,
 				613E68161AB3957D007C21DB /* img5.png in Resources */,
 				613613C21AD3089E00908E1F /* Tumbling Score Calculator banner.png in Resources */,
 				613E682A1AB615F5007C21DB /* images-4.jpeg in Resources */,
@@ -389,6 +420,7 @@
 				613613C01AD2FDF200908E1F /* icon-ios7-arrow-left-1289.png in Resources */,
 				61BE2DEE1ADC2E2300307BB9 /* Launch Screen.xib in Resources */,
 				613E68141AB39554007C21DB /* img4.png in Resources */,
+				61352D3C1AE53CA6003E5B27 /* img9.png in Resources */,
 				613E68181AB4A639007C21DB /* GymDanmarkTumbling.png in Resources */,
 				6169513E1AC171B3009E89A4 /* Images.xcassets in Resources */,
 				616951321ABC49E4009E89A4 /* vmtramptumb2014-foto-fig-13.jpg in Resources */,

@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="7531" systemVersion="14D131" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" initialViewController="tRV-3j-uGT">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="7531" systemVersion="14D131" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" initialViewController="JQW-Fi-AXl">
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="7520"/>
         <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
@@ -38,7 +38,7 @@
                                     <constraint firstAttribute="height" constant="60" id="wQo-n2-iU9"/>
                                 </constraints>
                             </imageView>
-                            <tableView clipsSubviews="YES" alpha="0.69999999999999973" contentMode="scaleToFill" bounces="NO" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="83" sectionHeaderHeight="22" sectionFooterHeight="22" translatesAutoresizingMaskIntoConstraints="NO" id="hey-tt-DfT">
+                            <tableView clipsSubviews="YES" alpha="0.69999999999999973" contentMode="scaleToFill" bounces="NO" scrollEnabled="NO" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="83" sectionHeaderHeight="22" sectionFooterHeight="22" translatesAutoresizingMaskIntoConstraints="NO" id="hey-tt-DfT">
                                 <rect key="frame" x="-4" y="87" width="422" height="649"/>
                                 <color key="backgroundColor" red="0.71579071969696972" green="0.71579071969696972" blue="0.71579071969696972" alpha="1" colorSpace="calibratedRGB"/>
                                 <color key="separatorColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
@@ -65,7 +65,7 @@
                                             <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
                                             <constraints>
                                                 <constraint firstAttribute="centerY" secondItem="MCU-FR-y5g" secondAttribute="centerY" constant="-6" id="7sa-qL-Drf"/>
-                                                <constraint firstAttribute="trailingMargin" secondItem="14x-AN-cv6" secondAttribute="trailing" constant="28" id="d6U-4v-n9R"/>
+                                                <constraint firstAttribute="trailingMargin" secondItem="14x-AN-cv6" secondAttribute="trailing" constant="15" id="d6U-4v-n9R"/>
                                                 <constraint firstItem="MCU-FR-y5g" firstAttribute="leading" secondItem="ZGt-1D-Wic" secondAttribute="leadingMargin" constant="10" id="dPO-E5-2kz"/>
                                                 <constraint firstItem="MCU-FR-y5g" firstAttribute="centerY" secondItem="14x-AN-cv6" secondAttribute="centerY" constant="0.5" id="ieF-KR-8UY"/>
                                             </constraints>
@@ -529,6 +529,9 @@
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     </view>
                     <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina55"/>
+                    <connections>
+                        <outlet property="tableView" destination="WUM-UI-9w0" id="9xJ-zF-zeX"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="4Mb-Xr-cH6" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
@@ -537,7 +540,7 @@
         <!--Live Score Screen-->
         <scene sceneID="oZ8-D0-yUC">
             <objects>
-                <viewController id="tRV-3j-uGT" customClass="LiveScoreScreen" customModule="Tumbling_DK" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="LiveScoreScreen" id="tRV-3j-uGT" customClass="LiveScoreScreen" customModule="Tumbling_DK" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="fRP-3L-5Z0"/>
                         <viewControllerLayoutGuide type="bottom" id="Nt5-Ax-7IF"/>

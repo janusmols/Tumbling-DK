@@ -14,11 +14,16 @@ class ViewController: UIViewController, UITableViewDataSource, UITableViewDelega
     //initialize the category array
     var arrayOfCategories: [categories] = [categories]()
     
+
+    
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         //call the setUpCategories func
         self.setUpCategories()
-        
+        let screenSize: CGRect = UIScreen.mainScreen().bounds
+        let screenHeight = screenSize.height
+        self.myTableView.rowHeight = (screenHeight-87)/7
         
 }
     
@@ -30,11 +35,12 @@ class ViewController: UIViewController, UITableViewDataSource, UITableViewDelega
     func setUpCategories(){
         //set up the the titles for the tableview
         var category1 = categories(title: "Nyheder", imageName: "img1")
-        var category2 = categories(title: "Top tumblere", imageName: "img2")
+        var category2 = categories(title: "LiveScore", imageName: "img7")
         var category3 = categories(title: "Sværhedsrekorder", imageName: "img3")
         var category4 = categories(title: "Video", imageName: "img4")
         var category5 = categories(title: "Kalender", imageName: "img5")
         var category6 = categories(title: "Resultater", imageName: "img6")
+        var category7 = categories(title: "Top tumblere", imageName: "img2")
         
         //connect the titles to the categoryarray
         arrayOfCategories.append(category1)
@@ -43,6 +49,7 @@ class ViewController: UIViewController, UITableViewDataSource, UITableViewDelega
         arrayOfCategories.append(category4)
         arrayOfCategories.append(category5)
         arrayOfCategories.append(category6)
+        arrayOfCategories.append(category7)
 }
     
     
@@ -59,6 +66,8 @@ class ViewController: UIViewController, UITableViewDataSource, UITableViewDelega
         let categories = arrayOfCategories[indexPath.row]
         
         cell.setCell(categories.title, imageName: categories.imageName)
+        
+        
         
         return cell
 }
@@ -77,8 +86,8 @@ class ViewController: UIViewController, UITableViewDataSource, UITableViewDelega
             break
             
         case 1:
-            var topTumblersScreen: TopTumblersScreen = self.storyboard?.instantiateViewControllerWithIdentifier("TopTumblersScreen") as! TopTumblersScreen
-            self.presentViewController(topTumblersScreen, animated: true, completion: nil)
+            var liveScoreScreen: LiveScoreScreen = self.storyboard?.instantiateViewControllerWithIdentifier("LiveScoreScreen") as! LiveScoreScreen
+            self.presentViewController(liveScoreScreen, animated: true, completion: nil)
             break
             
         case 2:
@@ -101,6 +110,12 @@ class ViewController: UIViewController, UITableViewDataSource, UITableViewDelega
             self.presentViewController(resultScreen, animated: true, completion: nil)
             break
             
+        case 6:
+            var topTumblersScreen: TopTumblersScreen = self.storyboard?.instantiateViewControllerWithIdentifier("TopTumblersScreen") as! TopTumblersScreen
+            self.presentViewController(topTumblersScreen, animated: true, completion: nil)
+            break
+            
+
             
         default:
             break
