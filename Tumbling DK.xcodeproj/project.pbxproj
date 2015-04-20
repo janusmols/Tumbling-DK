@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		61352D361AE436AE003E5B27 /* Retrieve arary into tableview.swift in Sources */ = {isa = PBXBuildFile; fileRef = 61352D351AE436AE003E5B27 /* Retrieve arary into tableview.swift */; };
+		61352D381AE43F98003E5B27 /* LiveScoreScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = 61352D371AE43F98003E5B27 /* LiveScoreScreen.swift */; };
 		613613B41AD05EA900908E1F /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 613E68081AB36EDC007C21DB /* Main.storyboard */; };
 		613613B61AD05FDB00908E1F /* TableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 613613B51AD05FDB00908E1F /* TableViewController.swift */; };
 		613613BE1AD2F97500908E1F /* icon-ios7-arrow-left-128.png in Resources */ = {isa = PBXBuildFile; fileRef = 613613BD1AD2F97500908E1F /* icon-ios7-arrow-left-128.png */; };
@@ -29,7 +31,6 @@
 		613E68261AB4C0D8007C21DB /* CalenderScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = 613E68251AB4C0D8007C21DB /* CalenderScreen.swift */; };
 		613E68281AB50F67007C21DB /* tumblingimg.png in Resources */ = {isa = PBXBuildFile; fileRef = 613E68271AB50F67007C21DB /* tumblingimg.png */; };
 		613E682A1AB615F5007C21DB /* images-4.jpeg in Resources */ = {isa = PBXBuildFile; fileRef = 613E68291AB615F5007C21DB /* images-4.jpeg */; };
-		615EF6ED1ACEF8F700FA618A /* SeccondLaunchScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = 615EF6EC1ACEF8F700FA618A /* SeccondLaunchScreen.swift */; };
 		615EF6F41ACFEDA100FA618A /* CustomCellSec.swift in Sources */ = {isa = PBXBuildFile; fileRef = 615EF6F31ACFEDA100FA618A /* CustomCellSec.swift */; };
 		616951321ABC49E4009E89A4 /* vmtramptumb2014-foto-fig-13.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 616951311ABC49E4009E89A4 /* vmtramptumb2014-foto-fig-13.jpg */; };
 		616951381ABC63AB009E89A4 /* VideoCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 616951371ABC63AB009E89A4 /* VideoCell.swift */; };
@@ -69,6 +70,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		61352D351AE436AE003E5B27 /* Retrieve arary into tableview.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Retrieve arary into tableview.swift"; sourceTree = "<group>"; };
+		61352D371AE43F98003E5B27 /* LiveScoreScreen.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LiveScoreScreen.swift; sourceTree = "<group>"; };
 		613613B51AD05FDB00908E1F /* TableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TableViewController.swift; sourceTree = "<group>"; };
 		613613BD1AD2F97500908E1F /* icon-ios7-arrow-left-128.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "icon-ios7-arrow-left-128.png"; sourceTree = "<group>"; };
 		613613BF1AD2FDF200908E1F /* icon-ios7-arrow-left-1289.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "icon-ios7-arrow-left-1289.png"; sourceTree = "<group>"; };
@@ -91,7 +94,6 @@
 		613E68251AB4C0D8007C21DB /* CalenderScreen.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = CalenderScreen.swift; path = ../CalenderScreen.swift; sourceTree = "<group>"; };
 		613E68271AB50F67007C21DB /* tumblingimg.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = tumblingimg.png; sourceTree = "<group>"; };
 		613E68291AB615F5007C21DB /* images-4.jpeg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "images-4.jpeg"; sourceTree = "<group>"; };
-		615EF6EC1ACEF8F700FA618A /* SeccondLaunchScreen.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SeccondLaunchScreen.swift; sourceTree = "<group>"; };
 		615EF6F31ACFEDA100FA618A /* CustomCellSec.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CustomCellSec.swift; sourceTree = "<group>"; };
 		616951311ABC49E4009E89A4 /* vmtramptumb2014-foto-fig-13.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "vmtramptumb2014-foto-fig-13.jpg"; sourceTree = "<group>"; };
 		616951371ABC63AB009E89A4 /* VideoCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = VideoCell.swift; sourceTree = "<group>"; };
@@ -221,7 +223,8 @@
 				613E68041AB32C82007C21DB /* NewsScreen.swift */,
 				613E68251AB4C0D8007C21DB /* CalenderScreen.swift */,
 				6169513B1AC16592009E89A4 /* ResultScreen.swift */,
-				615EF6EC1ACEF8F700FA618A /* SeccondLaunchScreen.swift */,
+				61352D351AE436AE003E5B27 /* Retrieve arary into tableview.swift */,
+				61352D371AE43F98003E5B27 /* LiveScoreScreen.swift */,
 				613E68081AB36EDC007C21DB /* Main.storyboard */,
 				61BE2DED1ADC2E2300307BB9 /* Launch Screen.xib */,
 				61CF0FA21AA8C1300040FCE9 /* Tumbling_DK.xcdatamodeld */,
@@ -410,6 +413,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				613E67FF1AB32170007C21DB /* Category.swift in Sources */,
+				61352D361AE436AE003E5B27 /* Retrieve arary into tableview.swift in Sources */,
 				613E67FD1AB320AD007C21DB /* HomeScreen.swift in Sources */,
 				61CF0FA41AA8C1300040FCE9 /* Tumbling_DK.xcdatamodeld in Sources */,
 				613E68241AB4C0BB007C21DB /* VideoScreen.swift in Sources */,
@@ -420,9 +424,9 @@
 				613E67FB1AB31F85007C21DB /* CustomCell.swift in Sources */,
 				616951381ABC63AB009E89A4 /* VideoCell.swift in Sources */,
 				61CF0FA11AA8C1300040FCE9 /* AppDelegate.swift in Sources */,
+				61352D381AE43F98003E5B27 /* LiveScoreScreen.swift in Sources */,
 				613613B61AD05FDB00908E1F /* TableViewController.swift in Sources */,
 				613E68051AB32C82007C21DB /* NewsScreen.swift in Sources */,
-				615EF6ED1ACEF8F700FA618A /* SeccondLaunchScreen.swift in Sources */,
 				613E68221AB4C0A5007C21DB /* RecordsScreen.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
