@@ -41,7 +41,7 @@ class TableViewController: PFQueryTableViewController {
         return query
     }
     
-    
+    /*
 
     //override func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath) -> UITableViewCell
     override func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath, object: PFObject) -> PFTableViewCell {
@@ -64,7 +64,7 @@ class TableViewController: PFQueryTableViewController {
         return cell
 
     }
-    
+    */
     override func tableView(tableView: UITableView, didSelectRowAtIndexPath indexPath: NSIndexPath) {
         
         var topTumblersScreen: TopTumblersScreen = self.storyboard?.instantiateViewControllerWithIdentifier("TopTumblersScreen") as! TopTumblersScreen

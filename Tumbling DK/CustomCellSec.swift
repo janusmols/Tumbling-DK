@@ -9,9 +9,8 @@
 import UIKit
 
 
-class CustomCellSec:  PFTableViewCell {
+class CustomCellSec:  UITableViewCell {
 
     @IBOutlet weak var rowsOfTopTumblere: UILabel!
 
-    
 }

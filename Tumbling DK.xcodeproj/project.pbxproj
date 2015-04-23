@@ -11,6 +11,7 @@
 		61352D381AE43F98003E5B27 /* LiveScoreScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = 61352D371AE43F98003E5B27 /* LiveScoreScreen.swift */; };
 		61352D3C1AE53CA6003E5B27 /* img9.png in Resources */ = {isa = PBXBuildFile; fileRef = 61352D3B1AE53CA6003E5B27 /* img9.png */; };
 		61352D3E1AE5584D003E5B27 /* img7.png in Resources */ = {isa = PBXBuildFile; fileRef = 61352D3D1AE5584D003E5B27 /* img7.png */; };
+		61352D431AE5785F003E5B27 /* TopTumblerTableView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 61352D421AE5785F003E5B27 /* TopTumblerTableView.swift */; };
 		613613B41AD05EA900908E1F /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 613E68081AB36EDC007C21DB /* Main.storyboard */; };
 		613613B61AD05FDB00908E1F /* TableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 613613B51AD05FDB00908E1F /* TableViewController.swift */; };
 		613613BE1AD2F97500908E1F /* icon-ios7-arrow-left-128.png in Resources */ = {isa = PBXBuildFile; fileRef = 613613BD1AD2F97500908E1F /* icon-ios7-arrow-left-128.png */; };
@@ -76,6 +77,7 @@
 		61352D371AE43F98003E5B27 /* LiveScoreScreen.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LiveScoreScreen.swift; sourceTree = "<group>"; };
 		61352D3B1AE53CA6003E5B27 /* img9.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = img9.png; sourceTree = "<group>"; };
 		61352D3D1AE5584D003E5B27 /* img7.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = img7.png; sourceTree = "<group>"; };
+		61352D421AE5785F003E5B27 /* TopTumblerTableView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TopTumblerTableView.swift; sourceTree = "<group>"; };
 		613613B51AD05FDB00908E1F /* TableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TableViewController.swift; sourceTree = "<group>"; };
 		613613BD1AD2F97500908E1F /* icon-ios7-arrow-left-128.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "icon-ios7-arrow-left-128.png"; sourceTree = "<group>"; };
 		613613BF1AD2FDF200908E1F /* icon-ios7-arrow-left-1289.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "icon-ios7-arrow-left-1289.png"; sourceTree = "<group>"; };
@@ -196,6 +198,7 @@
 				613E681F1AB4C084007C21DB /* TopTumblersScreen.swift */,
 				615EF6F31ACFEDA100FA618A /* CustomCellSec.swift */,
 				613613B51AD05FDB00908E1F /* TableViewController.swift */,
+				61352D421AE5785F003E5B27 /* TopTumblerTableView.swift */,
 			);
 			name = TopTumbler;
 			sourceTree = "<group>";
@@ -459,6 +462,7 @@
 				61352D381AE43F98003E5B27 /* LiveScoreScreen.swift in Sources */,
 				613613B61AD05FDB00908E1F /* TableViewController.swift in Sources */,
 				613E68051AB32C82007C21DB /* NewsScreen.swift in Sources */,
+				61352D431AE5785F003E5B27 /* TopTumblerTableView.swift in Sources */,
 				613E68221AB4C0A5007C21DB /* RecordsScreen.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

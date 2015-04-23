@@ -8,7 +8,7 @@
 
 import UIKit
 
-class VideoScreen: PFQueryTableViewController {
+class VideoScreen: PFQueryTableViewController, UITableViewDataSource, UITableViewDelegate {
     
     
     override func viewDidLoad() {
@@ -39,7 +39,7 @@ class VideoScreen: PFQueryTableViewController {
         return query
     }
     
-
+ 
     
     //override func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath) -> UITableViewCell
     override func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath, object: PFObject) -> PFTableViewCell {

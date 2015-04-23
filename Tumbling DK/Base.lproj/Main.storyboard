@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="7531" systemVersion="14D131" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" initialViewController="JQW-Fi-AXl">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="7531" systemVersion="14D131" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" initialViewController="n3Y-A1-wLd">
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="7520"/>
         <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
@@ -172,61 +172,63 @@
             </objects>
             <point key="canvasLocation" x="469" y="-519"/>
         </scene>
-        <!--Table View Controller-->
-        <scene sceneID="im8-rA-HOi">
+        <!--Top Tumbler Table View-->
+        <scene sceneID="RLf-50-RgY">
             <objects>
-                <tableViewController id="rC6-sk-fXu" customClass="TableViewController" customModule="Tumbling_DK" customModuleProvider="target" sceneMemberID="viewController">
-                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="22" sectionFooterHeight="22" id="pHF-24-2iG">
+                <viewController id="n3Y-A1-wLd" customClass="TopTumblerTableView" customModule="Tumbling_DK" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="1q4-tm-HNp"/>
+                        <viewControllerLayoutGuide type="bottom" id="eUH-m1-DGU"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="1OM-tK-uXv">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                        <navigationBar key="tableHeaderView" contentMode="scaleToFill" id="b0q-3f-fTI">
-                            <rect key="frame" x="0.0" y="0.0" width="414" height="44"/>
-                            <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMaxY="YES"/>
-                            <items>
-                                <navigationItem title="Vælg Profil" id="tIm-rc-PUY">
-                                    <barButtonItem key="leftBarButtonItem" image="icon-ios7-arrow-left-128.png" id="RPd-ij-MuK">
+                        <subviews>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="22" sectionFooterHeight="22" translatesAutoresizingMaskIntoConstraints="NO" id="r4H-AR-7xh">
+                                <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <prototypes>
+                                    <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="Cell" id="acm-vE-6P5" customClass="CustomCellSec" customModule="Tumbling_DK" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="0.0" width="414" height="44"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="acm-vE-6P5" id="ojT-65-FCo">
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="rn3-D9-bwd">
+                                                    <rect key="frame" x="45" y="11" width="156" height="21"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                    <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                            </subviews>
+                                        </tableViewCellContentView>
                                         <connections>
-                                            <segue destination="lsS-os-EKt" kind="modal" modalTransitionStyle="crossDissolve" id="QDR-cU-rUb"/>
+                                            <outlet property="rowsOfTopTumblere" destination="rn3-D9-bwd" id="wLf-YR-zAq"/>
                                         </connections>
-                                    </barButtonItem>
-                                </navigationItem>
-                            </items>
-                        </navigationBar>
-                        <prototypes>
-                            <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="Cell" id="lF6-gd-Wd4" customClass="CustomCellSec" customModule="Tumbling_DK" customModuleProvider="target">
-                                <autoresizingMask key="autoresizingMask"/>
-                                <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="lF6-gd-Wd4" id="hVf-SN-Bmf">
-                                    <autoresizingMask key="autoresizingMask"/>
-                                    <subviews>
-                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="3" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="wbh-H7-6iT">
-                                            <rect key="frame" x="8" y="8" width="398" height="18"/>
-                                            <fontDescription key="fontDescription" type="system" pointSize="15"/>
-                                            <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
-                                            <nil key="highlightedColor"/>
-                                        </label>
-                                    </subviews>
-                                    <constraints>
-                                        <constraint firstItem="wbh-H7-6iT" firstAttribute="top" secondItem="hVf-SN-Bmf" secondAttribute="topMargin" id="8Oc-Kb-ND9"/>
-                                        <constraint firstItem="wbh-H7-6iT" firstAttribute="leading" secondItem="hVf-SN-Bmf" secondAttribute="leadingMargin" id="DOp-l3-VJN"/>
-                                        <constraint firstItem="wbh-H7-6iT" firstAttribute="trailing" secondItem="hVf-SN-Bmf" secondAttribute="trailingMargin" id="VQY-SQ-y3k"/>
-                                    </constraints>
-                                </tableViewCellContentView>
+                                    </tableViewCell>
+                                </prototypes>
                                 <connections>
-                                    <outlet property="rowsOfTopTumblere" destination="wbh-H7-6iT" id="rad-Vu-8Nr"/>
+                                    <outlet property="dataSource" destination="n3Y-A1-wLd" id="ySY-Eh-3rU"/>
+                                    <outlet property="delegate" destination="n3Y-A1-wLd" id="Ktz-46-4ZL"/>
                                 </connections>
-                            </tableViewCell>
-                        </prototypes>
-                        <connections>
-                            <outlet property="dataSource" destination="rC6-sk-fXu" id="LLN-zt-Wxf"/>
-                            <outlet property="delegate" destination="rC6-sk-fXu" id="ulB-t4-KPI"/>
-                        </connections>
-                    </tableView>
+                            </tableView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="r4H-AR-7xh" firstAttribute="leading" secondItem="1OM-tK-uXv" secondAttribute="leadingMargin" constant="-16" id="7L9-Rm-F7I"/>
+                            <constraint firstItem="eUH-m1-DGU" firstAttribute="top" secondItem="r4H-AR-7xh" secondAttribute="bottom" id="DNx-gc-u0y"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="r4H-AR-7xh" secondAttribute="trailing" constant="-16" id="kfg-x2-67y"/>
+                            <constraint firstItem="r4H-AR-7xh" firstAttribute="top" secondItem="1OM-tK-uXv" secondAttribute="topMargin" id="vI6-fp-8Dh"/>
+                        </constraints>
+                    </view>
                     <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina55"/>
-                </tableViewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="QB4-ef-3gO" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                    <connections>
+                        <outlet property="tableView" destination="r4H-AR-7xh" id="WMG-Fj-row"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="IrI-5e-eei" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="20" y="292"/>
+            <point key="canvasLocation" x="13" y="292"/>
         </scene>
         <!--Top Tumblers Screen-->
         <scene sceneID="ktn-2d-e5e">
@@ -253,11 +255,7 @@
                                         </connections>
                                     </barButtonItem>
                                     <barButtonItem style="plain" systemItem="flexibleSpace" id="LNc-Dd-3xq"/>
-                                    <barButtonItem title="Flere profiler" id="8j1-pR-RRG">
-                                        <connections>
-                                            <segue destination="rC6-sk-fXu" kind="modal" modalTransitionStyle="crossDissolve" id="wvn-Cy-Cn6"/>
-                                        </connections>
-                                    </barButtonItem>
+                                    <barButtonItem title="Flere profiler" id="8j1-pR-RRG"/>
                                 </items>
                                 <color key="barTintColor" white="0.84948087989999999" alpha="1" colorSpace="calibratedWhite"/>
                             </toolbar>
@@ -449,7 +447,7 @@
         <scene sceneID="pn4-vn-X26">
             <objects>
                 <tableViewController storyboardIdentifier="VideoScreen" id="b8N-sZ-nXs" customClass="VideoScreen" customModule="Tumbling_DK" customModuleProvider="target" sceneMemberID="viewController">
-                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="310" sectionHeaderHeight="22" sectionFooterHeight="22" id="8DN-J5-rsK">
+                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="22" sectionFooterHeight="22" id="8DN-J5-rsK">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
@@ -475,6 +473,9 @@
                                         <webView contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="rvr-dJ-jqg">
                                             <rect key="frame" x="0.0" y="0.0" width="414" height="309"/>
                                             <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                            <connections>
+                                                <outlet property="delegate" destination="b8N-sZ-nXs" id="ie9-kT-8c4"/>
+                                            </connections>
                                         </webView>
                                     </subviews>
                                     <constraints>
@@ -739,6 +740,6 @@
         <simulatedScreenMetrics key="destination" type="retina4"/>
     </simulatedMetricsContainer>
     <inferredMetricsTieBreakers>
-        <segue reference="EZu-Op-rEg"/>
+        <segue reference="14y-iA-hQq"/>
     </inferredMetricsTieBreakers>
 </document>
